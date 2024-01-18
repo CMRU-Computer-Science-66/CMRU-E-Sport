@@ -26,6 +26,9 @@ export default function TeamPage() {
           <div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mt-5">{team.title}</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+              <div>
+                <Image src={team.img} alt={team.title} className="rounded-lg" width={200} height={200} />
+              </div>
               <div className="text-left">
                 <h2 className="text-2xl font-bold mt-2">Team Details</h2>
                 <p className="mt-3">{team.contents}</p>
@@ -45,9 +48,6 @@ export default function TeamPage() {
                     {team.coachingStaff.assistantCoaches ? team.coachingStaff.assistantCoaches.join(', ') : 'N/A'}
                   </p>
                 </div>
-              </div>
-              <div>
-                <Image src={team.img} alt={team.title} className="rounded-lg" width={200} height={250} />
               </div>
             </div>
           </div>

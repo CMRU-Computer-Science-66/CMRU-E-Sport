@@ -45,6 +45,11 @@ export default function NavbarComp() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
+                    <Link color="foreground" href="/contents/scoreboard">
+                        ScoreBoard
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
                     <Link color="foreground" href="/contents/team">
                         TeamList
                     </Link>

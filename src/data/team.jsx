@@ -3,6 +3,10 @@ import Cloud9Img from "@/assets/team/cloud9.png"
 import AstralisImg from "@/assets/team/astralis.png"
 import LiquidImg from "@/assets/team/teamliquid.png"
 import FaZeImg from "@/assets/team/faze.png"
+import FnaticImg from "@/assets/team/fnatic.png"
+import NatusImg from "@/assets/team/NatusVincere.png"
+import FuriaImg from "@/assets/team/furiaesport.png"
+import EvilImg from "@/assets/team/evil.png"
 
 export const TeamData = [
     {
@@ -82,4 +86,138 @@ export const TeamData = [
             assistantCoaches: null,
         },
     },
+    {
+        "title": "Fnatic",
+        "img": FnaticImg,
+        "members": [
+            { "handle": "rain", "name": "Nygaard, Håvard", "nationality": "Norway" },
+            { "handle": "broky", "name": "Saukants, Helvijs", "nationality": "Latvia" },
+            { "handle": "frozen", "name": "Čerňanský, David", "nationality": "Slovakia" },
+            { "handle": "karrigan", "name": "Andersen, Finn", "nationality": "Denmark" },
+            { "handle": "ropz", "name": "Kool, Robin", "nationality": "Estonia" },
+            { "handle": "olofmeister (I)", "name": "Kajbjer Gustafsson, Olof", "nationality": "Sweden" }
+        ],
+        "coachingStaff": {
+            "headCoach": "Andreas 'Samuelsson' Samuelsson (team director)",
+            "assistantCoaches": ["Jamie 'keita' Hall (strategic coach)"]
+        }
+    },
+    {
+        "title": "Natus Vincere",
+        "img": NatusImg,
+        "members": [
+            { "handle": "w0nderful", "name": "Zhdanov, Ihor", "nationality": "Ukraine" },
+            { "handle": "b1t", "name": "Vakhovskyi, Valerii", "nationality": "Ukraine" },
+            { "handle": "Aleksib", "name": "Virolainen, Aleksi", "nationality": "Finland" },
+            { "handle": "iM", "name": "Ivan, Mihai", "nationality": "Romania" },
+            { "handle": "jL", "name": "Lekavicius, Justinas", "nationality": "Lithuania" },
+            { "handle": "s1mple (I)", "name": "Kostyliev, Oleksandr", "nationality": "Ukraine" }
+        ],
+        "coachingStaff": {
+            "headCoach": "Andrii 'B1ad3' Gorodenskyi",
+            "assistantCoaches": null
+        }
+    },
+    {
+        "title": "FURIA",
+        "img": FuriaImg,
+        "members": [
+            { "handle": "FalleN", "name": "Toledo, Gabriel", "nationality": "Brazil" },
+            { "handle": "chelo", "name": "Cespedes, Marcelo", "nationality": "Brazil" },
+            { "handle": "yuurih", "name": "Santos, Yuri", "nationality": "Brazil" },
+            { "handle": "arT", "name": "Piovezan, Andrei", "nationality": "Brazil" },
+            { "handle": "KSCERATO", "name": "Cerato, Kaike", "nationality": "Brazil" }
+        ],
+        "coachingStaff": {
+            "headCoach": null,
+            "assistantCoaches": null
+        }
+    },
+    {
+        "title": "Evil Geniuses",
+        "img": EvilImg,
+        "members": [
+            { "handle": "autimatic", "name": "Ta, Timothy", "nationality": "United States" },
+            { "handle": "Jeorge", "name": "Endicott, Jeorge", "nationality": "United States" },
+            { "handle": "junior", "name": "Johnson, Paytyn", "nationality": "United States" },
+            { "handle": "Walco", "name": "Walsh, Colby", "nationality": "Canada" }
+        ],
+        "coachingStaff": {
+            "headCoach": "Tommy 'Axed' Ryan",
+            "assistantCoaches": null
+        }
+    },
+
+];
+
+export const ScoreListData = [
+    {
+        "tournament": "CMRU Pro League",
+        "teams": [
+            {
+                "name": "G2 Esports",
+                "matchesPlayed": 5,
+                "wins": 4,
+                "losses": 0,
+                "draws": 1,
+                "totalPoints": 13
+            },
+            {
+                "name": "Cloud9",
+                "matchesPlayed": 5,
+                "wins": 2,
+                "losses": 2,
+                "draws": 1,
+                "totalPoints": 7
+            },
+            {
+                "name": "Astralis",
+                "matchesPlayed": 5,
+                "wins": 1,
+                "losses": 3,
+                "draws": 1,
+                "totalPoints": 4
+            },
+            {
+                "name": "Team Liquid",
+                "matchesPlayed": 5,
+                "wins": 3,
+                "losses": 1,
+                "draws": 1,
+                "totalPoints": 10
+            },
+            {
+                "name": "Fnatic",
+                "matchesPlayed": 0,
+                "wins": 0,
+                "losses": 0,
+                "draws": 0,
+                "totalPoints": 0
+            },
+            {
+                "name": "Natus Vincere",
+                "matchesPlayed": 0,
+                "wins": 0,
+                "losses": 0,
+                "draws": 0,
+                "totalPoints": 0
+            },
+            {
+                "name": "FURIA",
+                "matchesPlayed": 0,
+                "wins": 0,
+                "losses": 0,
+                "draws": 0,
+                "totalPoints": 0
+            },
+            {
+                "name": "Evil Geniuses",
+                "matchesPlayed": 0,
+                "wins": 0,
+                "losses": 0,
+                "draws": 0,
+                "totalPoints": 0
+            }
+        ]
+    }
 ];
