@@ -28,7 +28,7 @@ export default function Home() {
                 <div className="gap-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 mt-5">
                     {GameListData.map((item, index) => (
                         <Link key={index} href={`/games/${encodeURIComponent(item.title)}`}>
-                            <Card className="group shadow-sm transition-transform transform duration-300 ease-in-out hover:scale-105" isPressable>
+                            <Card className="group shadow-sm transition-transform transform duration-300 ease-in-out hover:scale-105 ">
                                 <CardBody className="overflow-visible p-5 justify-between">
                                     <Image
                                         shadow="sm"
