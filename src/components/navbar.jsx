@@ -18,8 +18,8 @@ export default function NavbarComp() {
 
     const menuItems = [
         { label: "Tournaments", url: "/contents/tournaments" },
-        { label: "TeamList", url: "/contents/team" },
-        { label: "Staff", url: "/contents/staff" },
+        { label: "TeamList", url: "/contents/teams" },
+        { label: "Staff", url: "/contents/staffs" },
         { label: "AboutUs", url: "/contents/about" },
     ];
 
@@ -50,12 +50,12 @@ export default function NavbarComp() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="/contents/team">
+                    <Link color="foreground" href="/contents/teams">
                         TeamList
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="/contents/staff">
+                    <Link color="foreground" href="/contents/staffs">
                         Staff
                     </Link>
                 </NavbarItem>
