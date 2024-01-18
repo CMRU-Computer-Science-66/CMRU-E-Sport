@@ -22,13 +22,31 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8 text-center p-5">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mt-3 p-5"> CMRU E-Sport</h2>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl"> CMRU E-Sport</h2>
+                <h4 className="text-xl text-gray-600 mt-2">ชมรม E-Spout มหาวิทยาลัยราชภัฏเชียงใหม่</h4>
+                <div className='text-left'>
+                    <h2 className='text-xl text-gray-600 mt-2'>
+                        สวัสดีทุกคนในชุมชน CMRU E-Sport เหนื่อยจากการต่อสู้ในโลกธรรมดาแล้วหรือยัง? ไม่เป็นไร!
+                        เพราะเราขอเชิญทุกท่านมาร่วมเป็นส่วนหนึ่งของครอบครัว CMRU E-Sport กัน!  สิ่งที่คุณจะได้
+                    </h2>
+                    <ul className="text-xl text-gray-600 list-disc pl-5">
+                        <li>โอกาสเล่นเกมกับนักกีฬา E-Sport ที่มีฝีมือ</li>
+                        <li>แบ่งปันประสบการณ์และเรื่องราวที่น่าสนใจในโลก E-Sport</li>
+                        <li>ร่วมสร้างความสนุกและความท้าทายในแข่งขัน E-Sport ต่าง ๆ</li>
+                    </ul>
+                    <h2 className='text-xl text-gray-600 mt-2'>
+                        มาร่วมสร้างสรรค์ประสบการณ์ที่น่าจดจำและเพิ่มพูนความสามารถในการแข่งขันของคุณ
+                    </h2>
+                    <h2 className="text-xl text-gray-600 mt-2">
+                        เรารอคอยทุกคนมาเป็นส่วนหนึ่งของชุมชน CMRU E-Sport และเตรียมพบกันในวันงาน! #CMRUESport #GamingCommunity #สนุกสนาน #ร่วมสนุกกับเกม
+                    </h2>
+                </div>
 
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mt-3 p-5">เกมที่จัดแข่งขัน</h2>
                 <div className="gap-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 mt-5">
                     {GameListData.map((item, index) => (
                         <Link key={index} href={`/games/${encodeURIComponent(item.title)}`}>
-                            <Card className="group shadow-sm transition-transform transform duration-300 ease-in-out hover:scale-105 ">
+                            <Card className="group shadow-sm transition-transform transform duration-300 ease-in-out hover:scale-105 bg-transparent">
                                 <CardBody className="overflow-visible p-5 justify-between">
                                     <Image
                                         shadow="sm"
