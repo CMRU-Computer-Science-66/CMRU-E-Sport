@@ -1,8 +1,10 @@
 // Components
-import { Card } from '@nextui-org/react'
 import Head from 'next/head'
 import React from 'react'
+import Link from 'next/link';
 import Image from 'next/image'
+import { useRouter } from 'next/router';
+import { Card } from '@nextui-org/react'
 
 // Data
 import { StaffData } from '@/data/staff'
@@ -23,14 +25,16 @@ export default function Staff() {
 
                 <div className="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {StaffData.map((item, index) => (
-                        <Card key={index} shadow="sm" isPressable={false} className="p-4">
-                            <div className="flex flex-col items-center">
-                                <Image src={item.img} alt={item.title} width={100} height={100} className="rounded-full" />
-                                <h4 className="text-lg font-semibold mt-4">{item.title}</h4>
-                                <p className="text-sm text-gray-500">{item.faculty}</p>
-                                <p className="text-sm text-gray-500">{item.major}</p>
-                            </div>
-                        </Card>
+                        <Link key={index} href={`/staffs/${encodeURIComponent(item.title)}`}>
+                            <Card key={index} shadow="sm" isPressable={false} className="p-4">
+                                <div className="flex flex-col items-center">
+                                    <Image src={item.img} alt={item.title} width={100} height={100} className="rounded-full" />
+                                    <h4 className="text-lg font-semibold mt-4">{item.title}</h4>
+                                    <p className="text-sm text-gray-500">{item.faculty}</p>
+                                    <p className="text-sm text-gray-500">{item.major}</p>
+                                </div>
+                            </Card>
+                        </Link>
                     ))}
                 </div>
             </div>
