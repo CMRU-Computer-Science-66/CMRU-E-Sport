@@ -10,7 +10,7 @@ import {
     NavbarMenuToggle,
     Link
 } from "@nextui-org/react";
-import { AcmeLogo } from "./acmeLogo.jsx";
+import { AcmeLogo } from "./acmelogo.jsx";
 
 // Contents
 export default function NavbarComp() {
