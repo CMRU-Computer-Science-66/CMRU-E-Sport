@@ -14,7 +14,7 @@ export default function Login() {
             </Head>
             <div className="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8 min-h-screen flex justify-center items-center">
                 <div className="bg-white p-8 rounded-md shadow-md w-full max-w-md">
-                    <h1 className="text-3xl font-bold mb-6 text-center">Sing In</h1>
+                    <h1 className="text-3xl font-bold mb-6 text-center">เข้าสู่ระบบ</h1>
                     <div className="mb-4">
                         <Input
                             name="username"
@@ -35,19 +35,19 @@ export default function Login() {
                         radius="full"
                         className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full"
                     >
-                        Sign In
+                        เข้าสู่ระบบ
                     </Button>
 
                     <div className="mt-4 text-center">
                         <Link href="/register" color="foreground">
-                            Register
+                            สมัครสมาชิก
                         </Link>
                     </div>
 
                     <div className="mt-2 text-center">
-                        <Link href="/forgot" color="foreground">
-                            Forgot Password ?
-                        </Link>
+                        {/* <Link href="/forgot" color="foreground">
+                           ลืมรหัสผ่าน?
+                        </Link> */}
                     </div>
 
                 </div>

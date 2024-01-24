@@ -2,9 +2,9 @@
 import Link from 'next/link';
 
 const pages = [
-    { path: './dashboard', label: 'Dashboard' },
-    { path: './upscore', label: 'UpdateScore' },
-    { path: './recruiting', label: 'Recruiting' },
+    { path: './dashboard', label: 'แดชบอร์ด' },
+    { path: './upscore', label: 'อัปเดตคะแนน' },
+    { path: './recruiting', label: 'รับสมัคร' },
 ];
 
 export default function Navadmin() {

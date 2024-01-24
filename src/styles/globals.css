@@ -19,6 +19,11 @@
 body {
   padding: 0;
   margin: 0;
+  /* background-image: url(https://cdn.discordapp.com/attachments/1197239691481718864/1199798141172580433/d49922927c99b253ebe9671dcaf5ff7f.jpg?ex=65c3da18&is=65b16518&hm=c6d5acf2e38dc5dd3834b8a07978e8c958e19bcba28a97c611197f6a58b0ecf5&);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
   background-image: linear-gradient(120deg, #e9dc6e, #eff319, #030303);
 }
 

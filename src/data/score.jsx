@@ -1,9 +1,11 @@
+
 export const ScoreListData = [
     {
         "tournament": "CMRU Pro League",
         "teams": [
             {
                 "name": "G2 Esports",
+                "image": "url_to_image_for_team_a",
                 "matchesPlayed": 5,
                 "wins": 4,
                 "losses": 0,
@@ -12,6 +14,7 @@ export const ScoreListData = [
             },
             {
                 "name": "Cloud9",
+                "image": "url_to_image_for_team_a",
                 "matchesPlayed": 5,
                 "wins": 2,
                 "losses": 2,
@@ -20,6 +23,7 @@ export const ScoreListData = [
             },
             {
                 "name": "Astralis",
+                "image": "url_to_image_for_team_a",
                 "matchesPlayed": 5,
                 "wins": 1,
                 "losses": 3,
@@ -28,6 +32,7 @@ export const ScoreListData = [
             },
             {
                 "name": "Team Liquid",
+                "image": "url_to_image_for_team_a",
                 "matchesPlayed": 5,
                 "wins": 3,
                 "losses": 1,
@@ -36,6 +41,7 @@ export const ScoreListData = [
             },
             {
                 "name": "Fnatic",
+                "image": "url_to_image_for_team_a",
                 "matchesPlayed": 0,
                 "wins": 0,
                 "losses": 0,
@@ -44,6 +50,7 @@ export const ScoreListData = [
             },
             {
                 "name": "Natus Vincere",
+                "image": "url_to_image_for_team_a",
                 "matchesPlayed": 0,
                 "wins": 0,
                 "losses": 0,
@@ -52,6 +59,7 @@ export const ScoreListData = [
             },
             {
                 "name": "FURIA",
+                "image": "url_to_image_for_team_a",
                 "matchesPlayed": 0,
                 "wins": 0,
                 "losses": 0,
@@ -60,6 +68,7 @@ export const ScoreListData = [
             },
             {
                 "name": "Evil Geniuses",
+                "image": "url_to_image_for_team_a",
                 "matchesPlayed": 0,
                 "wins": 0,
                 "losses": 0,

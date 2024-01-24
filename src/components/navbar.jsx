@@ -1,5 +1,5 @@
 // Components
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
     Navbar,
     NavbarBrand,
@@ -7,7 +7,13 @@ import {
     NavbarItem,
     NavbarMenu,
     NavbarMenuItem,
+    DropdownMenu,
     NavbarMenuToggle,
+    Dropdown,
+    DropdownTrigger,
+    DropdownItem,
+    Button,
+    Avatar,
     Link
 } from "@nextui-org/react";
 import { AcmeLogo } from "./acmelogo.jsx";
@@ -66,15 +72,40 @@ export default function NavbarComp() {
                 </NavbarItem>
             </NavbarContent>
 
-            <NavbarContent justify="end">
-                {/* <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Login</Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Button as={Link} color="primary" href="#" variant="flat">
-                        Sign Up
-                    </Button>
-                </NavbarItem> */}
+            <NavbarContent as="div" justify="end">
+                <Dropdown placement="bottom-end">
+                    <DropdownTrigger>
+                        <Avatar
+                            isBordered
+                            as="button"
+                            className="transition-transform"
+                            color="secondary"
+                            name="username"
+                            size="sm"
+                            src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+                        />
+                    </DropdownTrigger>
+                    <DropdownMenu aria-label="Profile Actions" variant="flat">
+                        <DropdownItem className="h-14 gap-2" href="/profile">
+                            <p className="font-semibold">บัญชีผู้ใช้</p>
+                            <p className="font-semibold">username</p>
+                        </DropdownItem>
+                        <DropdownItem href="/admin/dashboard">เมนูแอดมิน</DropdownItem>
+                        <DropdownItem key="payment">จ่ายเงิน</DropdownItem>
+                        <DropdownItem href="/contents/manageteam">จัดการทีม</DropdownItem>
+                        <DropdownItem key="logout" color="danger">
+                            ออกจากระบบ
+                        </DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                <Button
+                    radius="full"
+                    className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
+                >
+                    <Link href="/login" color="foreground">
+                        เข้าสู่ระบบ
+                    </Link>
+                </Button>
             </NavbarContent>
 
             <NavbarMenu>

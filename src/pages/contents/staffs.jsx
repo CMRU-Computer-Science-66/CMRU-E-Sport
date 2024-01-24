@@ -22,16 +22,16 @@ export default function Staff() {
             <div className="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8 text-center p-5">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Staff List</h2>
                 <h4 className="text-xl text-gray-600 mt-2">รายชื่อทีมงาน</h4>
-
                 <div className="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {StaffData.map((item, index) => (
                         <Link key={index} href={`/staffs/${encodeURIComponent(item.title)}`}>
-                            <Card key={index} shadow="sm" isPressable={false} className="p-4">
+                            <Card key={index} shadow="sm" isPressable={false} className="text-center p-4">
                                 <div className="flex flex-col items-center">
                                     <Image src={item.img} alt={item.title} width={100} height={100} className="rounded-full" />
                                     <h4 className="text-lg font-semibold mt-4">{item.title}</h4>
-                                    <p className="text-sm text-gray-500">{item.faculty}</p>
-                                    <p className="text-sm text-gray-500">{item.major}</p>
+                                    <h4 className="text-sm text-gray-500">{item.staffrole}</h4>
+                                    <h4 className="text-sm text-gray-500">{item.faculty}</h4>
+                                    <h4 className="text-sm text-sm text-gray-500">{item.major}</h4>
                                 </div>
                             </Card>
                         </Link>

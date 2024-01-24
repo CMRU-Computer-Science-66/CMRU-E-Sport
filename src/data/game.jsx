@@ -1,7 +1,6 @@
 import RovImg from "@/assets/game/rov.jpg"
 import PubgmImg from "@/assets/game/pubgm.png"
-import CodmImg from "@/assets/game/codm.png"
-import Cs2Img from "@/assets/game/cs2.png"
+import Fc24Img from "@/assets/game/fc24.jpeg"
 import ValoImg from "@/assets/game/valorant.png"
 
 export const GameListData = [
@@ -14,12 +13,8 @@ export const GameListData = [
         img: PubgmImg,
     },
     {
-        title: "Call Of Duty Mobile",
-        img: CodmImg,
-    },
-    {
-        title: "Counter Strike 2",
-        img: Cs2Img,
+        title: "EA SPORTS FC™ 24",
+        img: Fc24Img,
     },
     {
         title: "Valorant",
