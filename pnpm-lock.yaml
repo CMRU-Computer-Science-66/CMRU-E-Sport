@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@cmru-comsci-66/e-sport-database':
-    specifier: ^0.1.15
-    version: 0.1.15
+    specifier: ^0.1.16
+    version: 0.1.16
   '@cmru-comsci-66/e-sport-nextjs-server':
-    specifier: ^0.1.15
-    version: 0.1.15(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.1.16
+    version: 0.1.16(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0)
   '@next-auth/prisma-adapter':
     specifier: ^1.0.7
     version: 1.0.7(@prisma/client@5.8.1)(next-auth@4.24.5)
@@ -85,16 +85,16 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  /@cmru-comsci-66/e-sport-database@0.1.15:
-    resolution: {integrity: sha512-sHeVRruPZetUdwbQpDmePRGpSmixpYwKT88ldERz3cY3pkoakBqtxOADHFp60VkE6huA1KIK4TPhVAnYxB9GUA==}
+  /@cmru-comsci-66/e-sport-database@0.1.16:
+    resolution: {integrity: sha512-CH/47jIVvqEEIfsv7yYpipmw8voYsnnhL8d7lyHnNdiInJ0A8DVB42diKwLe1CY9UO3baK8Jar/VfZzFn5AeRg==}
     requiresBuild: true
     dependencies:
       '@prisma/client': 5.8.1(prisma@5.8.1)
       prisma: 5.8.1
     dev: false
 
-  /@cmru-comsci-66/e-sport-nextjs-server@0.1.15(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-0qXIvoa2CKZDiPwN2cdB1PFO+7KHTvCgaMG28qn0GMKR6yvhbMCYZtTeU5xPTsdb/LSd1seqr5W4Nb7IucJMDw==}
+  /@cmru-comsci-66/e-sport-nextjs-server@0.1.16(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-2pYutdFJSDu8XsFWlEF45rfN5ZnOI8encR73fSw+SOYJ0eoHqXxmsl+ueZP4czm6jvq60PQSly6feRGC2JB8rg==}
     peerDependencies:
       next: ^12.2.5 || ^13 || ^14
       nodemailer: ^6.6.5

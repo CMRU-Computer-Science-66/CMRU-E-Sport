@@ -35,7 +35,7 @@ export default function Login() {
                         />
                     </div>
                     <Button
-                   	   onClick={() => signIn("google", { redirect: false })}
+                   	   onClick={() => signIn("github", { redirect: false })}
                         radius="full"
                         className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full"
                     >
