@@ -2,7 +2,7 @@ import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import prisma from '@cmru-comsci-66/e-sport-database'
-import { google } from '@cmru-comsci-66/e-sport-nextjs-server/NextAuth';
+import { google } from '@cmru-comsci-66/e-sport-nextjs-server';
 
 export default NextAuth({
     providers: [
