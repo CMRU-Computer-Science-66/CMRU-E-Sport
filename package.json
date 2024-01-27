@@ -11,8 +11,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@cmru-comsci-66/e-sport-database": "^0.1.6",
-    "@cmru-comsci-66/e-sport-nextjs-server": "^0.1.6",
+    "@cmru-comsci-66/e-sport-database": "^0.1.10",
+    "@cmru-comsci-66/e-sport-nextjs-server": "^0.1.10",
     "@next-auth/prisma-adapter": "^1.0.7",
     "@nextui-org/react": "^2.2.9",
     "@prisma/client": "5.8.1",
