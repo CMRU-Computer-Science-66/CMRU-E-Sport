@@ -17,9 +17,11 @@ import {
     Link
 } from "@nextui-org/react";
 import { AcmeLogo } from "./acmelogo.jsx";
+import { useSession, signIn, signOut } from "next-auth/react"
 
 // Contents
 export default function NavbarComp() {
+    const { data: session } = useSession()
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const menuItems = [

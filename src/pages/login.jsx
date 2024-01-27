@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import { Input, Button, Link } from '@nextui-org/react';
 
+import { useSession, signIn, signOut } from "next-auth/react"
 // Contents
 export default function Login() {
+    const { data: session } = useSession()
+
     return (
         <div>
             <Head>
@@ -32,6 +35,7 @@ export default function Login() {
                         />
                     </div>
                     <Button
+                   	   onClick={() => signIn("google", { redirect: false })}
                         radius="full"
                         className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full"
                     >
