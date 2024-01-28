@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@cmru-comsci-66/e-sport-database':
-    specifier: ^0.2.4
-    version: 0.2.4
+    specifier: ^0.2.5
+    version: 0.2.5
   '@cmru-comsci-66/e-sport-nextjs-server':
-    specifier: ^0.2.4
-    version: 0.2.4(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.2.5
+    version: 0.2.5(next-auth@4.24.5)(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0)
   '@next-auth/prisma-adapter':
     specifier: ^1.0.7
     version: 1.0.7(@prisma/client@5.8.1)(next-auth@4.24.5)
@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^5.8.1
     version: 5.8.1
   '@types/node':
-    specifier: ^20.11.7
-    version: 20.11.7
+    specifier: ^20.11.9
+    version: 20.11.9
   autoprefixer:
     specifier: ^10.4.17
     version: 10.4.17(postcss@8.4.33)
@@ -85,23 +85,25 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  /@cmru-comsci-66/e-sport-database@0.2.4:
-    resolution: {integrity: sha512-xwm+9ytHFZbDshBYpsbydpfk8aDml0GJpZ04d8sNoxi+aaEQi8ERykf2ZvTekGNCmOltMFV8yvEOITasUWql6Q==}
+  /@cmru-comsci-66/e-sport-database@0.2.5:
+    resolution: {integrity: sha512-bYkfdmVlCeUgnigbDLNZUYumi9G7dRbMTD+3JzjiF3yXCDWZKJE+ihCjoFYoton70OXojzAc2/3fcoqMibPHqA==}
     requiresBuild: true
     dependencies:
       '@prisma/client': 5.8.1(prisma@5.8.1)
       prisma: 5.8.1
     dev: false
 
-  /@cmru-comsci-66/e-sport-nextjs-server@0.2.4(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-z+TsUgYIa64KnT2tkVR4WOmRV91UPOuwdeB7lrZFcAuZFIHw9St4BcdmELOR5uP93tZlkzi9sQMkIDdqTmvQyg==}
+  /@cmru-comsci-66/e-sport-nextjs-server@0.2.5(next-auth@4.24.5)(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-/vR+cHILrfi+wlwt6s7EuhBOe1Qdq7UIGzcovKy1kFZi57PcRDRyl2y8Vx2c7nSlOhShItnAQS/22RSw6xXksw==}
     peerDependencies:
       next: ^12.2.5 || ^13 || ^14
+      next-auth: ^4
       nodemailer: ^6.6.5
       react: ^17.0.2 || ^18
       react-dom: ^17.0.2 || ^18
     dependencies:
       next: 14.1.0(react-dom@18.2.0)(react@18.2.0)
+      next-auth: 4.24.5(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0)
       nodemailer: 6.9.8
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2860,8 +2862,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@20.11.7:
-    resolution: {integrity: sha512-GPmeN1C3XAyV5uybAf4cMLWT9fDWcmQhZVtMFu7OR32WjrqGG+Wnk2V1d0bmtUyE/Zy1QJ9BxyiTih9z8Oks8A==}
+  /@types/node@20.11.9:
+    resolution: {integrity: sha512-CQXNuMoS/VcoAMISe5pm4JnEd1Br5jildbQEToEMQvutmv+EaQr90ry9raiudgpyDuqFiV9e4rnjSfLNq12M5w==}
     dependencies:
       undici-types: 5.26.5
     dev: true
