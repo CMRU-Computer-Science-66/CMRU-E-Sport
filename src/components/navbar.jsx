@@ -17,12 +17,16 @@ import {
     Link
 } from "@nextui-org/react";
 import { AcmeLogo } from "./acmelogo.jsx";
-import { useSession, signIn, signOut } from "next-auth/react"
+import { useSession, signOut } from "next-auth/react"
 
 // Contents
 export default function NavbarComp() {
     const { data: session } = useSession()
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+    const handleSignOut = async () => {
+        await signOut({ redirect: false, callbackUrl: "/" });
+    };
 
     const menuItems = [
         { label: "Tournaments", url: "/contents/tournaments" },
@@ -75,39 +79,42 @@ export default function NavbarComp() {
             </NavbarContent>
 
             <NavbarContent as="div" justify="end">
-                <Dropdown placement="bottom-end">
-                    <DropdownTrigger>
-                        <Avatar
-                            isBordered
-                            as="button"
-                            className="transition-transform"
-                            color="secondary"
-                            name="username"
-                            size="sm"
-                            src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
-                        />
-                    </DropdownTrigger>
-                    <DropdownMenu aria-label="Profile Actions" variant="flat">
-                        <DropdownItem className="h-14 gap-2" href="/profile">
-                            <p className="font-semibold">บัญชีผู้ใช้</p>
-                            <p className="font-semibold">username</p>
-                        </DropdownItem>
-                        <DropdownItem href="/admin/dashboard">เมนูแอดมิน</DropdownItem>
-                        <DropdownItem key="payment">จ่ายเงิน</DropdownItem>
-                        <DropdownItem href="/contents/manageteam">จัดการทีม</DropdownItem>
-                        <DropdownItem key="logout" color="danger">
-                            ออกจากระบบ
-                        </DropdownItem>
-                    </DropdownMenu>
-                </Dropdown>
-                <Button
-                    radius="full"
-                    className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
-                >
-                    <Link href="/login" color="foreground">
-                        เข้าสู่ระบบ
-                    </Link>
-                </Button>
+                {session ? (
+                    <Dropdown placement="bottom-end">
+                        <DropdownTrigger>
+                            <Avatar
+                                isBordered
+                                as="button"
+                                className="transition-transform"
+                                color="secondary"
+                                name="username"
+                                size="sm"
+                                src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+                            />
+                        </DropdownTrigger>
+                        <DropdownMenu aria-label="Profile Actions" variant="flat">
+                            <DropdownItem className="h-14 gap-2" href="/profile">
+                                <p className="font-semibold">บัญชีผู้ใช้</p>
+                                <p className="font-semibold">username</p>
+                            </DropdownItem>
+                            <DropdownItem href="/admin/dashboard">เมนูแอดมิน</DropdownItem>
+                            <DropdownItem key="payment">จ่ายเงิน</DropdownItem>
+                            <DropdownItem href="/contents/manageteam">จัดการทีม</DropdownItem>
+                            <DropdownItem key="signOut" color="danger" onClick={handleSignOut}>
+                                ออกจากระบบ
+                            </DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                ) : (
+                    <Button
+                        radius="full"
+                        className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
+                    >
+                        <Link href="/login" color="foreground">
+                            Login
+                        </Link>
+                    </Button>
+                )}
             </NavbarContent>
 
             <NavbarMenu>

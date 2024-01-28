@@ -1,13 +1,13 @@
 {
   "name": "cmru-e-sport",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "private": true,
   "author": "ZismailDev <nattapong130247@gmail.com>",
   "contributors": [
-   {
+    {
       "email": "48393914+Faelayis@users.noreply.github.com",
       "name": "Faelayis"
-   }
+    }
   ],
   "scripts": {
     "dev": "next dev",
@@ -18,14 +18,20 @@
   "dependencies": {
     "@cmru-comsci-66/e-sport-database": "^0.2.5",
     "@cmru-comsci-66/e-sport-nextjs-server": "^0.2.5",
+		"@fortawesome/fontawesome-svg-core": "6.5.1",
+		"@fortawesome/free-brands-svg-icons": "6.5.1",
+		"@fortawesome/free-solid-svg-icons": "6.5.1",
+		"@fortawesome/react-fontawesome": "0.2.0",
     "@next-auth/prisma-adapter": "^1.0.7",
     "@nextui-org/react": "^2.2.9",
     "@prisma/client": "5.8.1",
-    "prisma": "5.8.1",
+    "font-awesome": "^4.7.0",
     "framer-motion": "^11.0.3",
     "next": "14.1.0",
     "next-auth": "^4.24.5",
+    "prisma": "5.8.1",
     "react": "^18.2.0",
+    "react-fontawesome": "^1.7.1",
     "sharp": "0.33.2"
   },
   "devDependencies": {

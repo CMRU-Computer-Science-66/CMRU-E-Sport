@@ -5,7 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 
 // Contents
-export default function Tournaments() {
+export default function Profile() {
     return (
         <div>
             <Head>
