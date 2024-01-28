@@ -6,6 +6,7 @@ import { useSession, signIn } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 export default function Login() {
     const { data: session } = useSession();
@@ -55,6 +56,16 @@ export default function Login() {
                             startContent={<FontAwesomeIcon className="h-4 w-4" icon={faGoogle} />}
                         >
                             Google
+                        </Button>
+                    </div>
+                    <div className='p-2'>
+                        <Button
+                            onClick={() => signIn('discord', { redirect: false }).then(() => router.push('/'))}
+                            radius="full"
+                            className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full"
+                            startContent={<FontAwesomeIcon className="h-4 w-4" icon={faDiscord} />}
+                        >
+                            Discord
                         </Button>
                     </div>
                     <div className='p-2'>
