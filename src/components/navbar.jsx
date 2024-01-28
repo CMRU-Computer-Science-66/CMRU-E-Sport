@@ -89,13 +89,13 @@ export default function NavbarComp() {
                                 color="secondary"
                                 name="username"
                                 size="sm"
-                                src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+                                src={session.user.image}
                             />
                         </DropdownTrigger>
                         <DropdownMenu aria-label="Profile Actions" variant="flat">
                             <DropdownItem className="h-14 gap-2" href="/profile">
                                 <p className="font-semibold">บัญชีผู้ใช้</p>
-                                <p className="font-semibold">username</p>
+                                <p className="font-semibold">{session.user.name}</p>
                             </DropdownItem>
                             <DropdownItem href="/admin/dashboard">เมนูแอดมิน</DropdownItem>
                             <DropdownItem key="payment">จ่ายเงิน</DropdownItem>

@@ -1,15 +1,15 @@
 // Components
-import React, { useState } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import { Input, Button, Link } from '@nextui-org/react';
-import { useSession, signIn } from "next-auth/react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useSession, signIn } from 'next-auth/react';
+import { useRouter } from 'next/router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-// Contents
 export default function Login() {
-    const { data: session } = useSession()
+    const { data: session } = useSession();
+    const router = useRouter();
 
     return (
         <div>
@@ -40,7 +40,7 @@ export default function Login() {
                     </div>
                     <div className='p-2'>
                         <Button
-                            onClick={() => signIn("github", { redirect: false })}
+                            onClick={() => signIn('github', { redirect: false }).then(() => router.push('/'))}
                             radius="full"
                             className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full"
                         >
@@ -49,40 +49,34 @@ export default function Login() {
                     </div>
                     <div className='p-2'>
                         <Button
-                            onClick={() => signIn("google", { redirect: false })}
+                            onClick={() => signIn('google', { redirect: false }).then(() => router.push('/'))}
                             radius="full"
                             className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full"
-                            startContent={
-                                <FontAwesomeIcon className="h-4 w-4" icon={faGoogle} />
-                            }
-                        >Google
+                            startContent={<FontAwesomeIcon className="h-4 w-4" icon={faGoogle} />}
+                        >
+                            Google
                         </Button>
                     </div>
                     <div className='p-2'>
                         <Button
-                            onClick={() => signIn("github", { redirect: false })}
+                            onClick={() => signIn('github', { redirect: false }).then(() => router.push('/'))}
                             radius="full"
                             className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full"
-                            startContent={
-                                <FontAwesomeIcon className="h-4 w-4" icon={faGithub} />
-                            }
+                            startContent={<FontAwesomeIcon className="h-4 w-4" icon={faGithub} />}
                         >
                             Github
                         </Button>
                     </div>
-
                     <div className="mt-4 text-center">
                         <Link href="/register" color="foreground">
                             สมัครสมาชิก
                         </Link>
                     </div>
-
                     <div className="mt-2 text-center">
                         {/* <Link href="/forgot" color="foreground">
-                           ลืมรหัสผ่าน?
-                        </Link> */}
+               ลืมรหัสผ่าน?
+            </Link> */}
                     </div>
-
                 </div>
             </div>
         </div>
