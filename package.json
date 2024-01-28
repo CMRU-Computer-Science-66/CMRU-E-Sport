@@ -1,6 +1,6 @@
 {
   "name": "cmru-e-sport",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "private": true,
   "author": "ZismailDev <nattapong130247@gmail.com>",
   "contributors": [
@@ -16,8 +16,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@cmru-comsci-66/e-sport-database": "^0.1.16",
-    "@cmru-comsci-66/e-sport-nextjs-server": "^0.1.16",
+    "@cmru-comsci-66/e-sport-database": "^0.2.3",
+    "@cmru-comsci-66/e-sport-nextjs-server": "^0.2.3",
     "@next-auth/prisma-adapter": "^1.0.7",
     "@nextui-org/react": "^2.2.9",
     "@prisma/client": "5.8.1",
