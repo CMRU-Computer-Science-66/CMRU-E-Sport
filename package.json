@@ -1,6 +1,6 @@
 {
   "name": "cmru-e-sport",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "private": true,
   "author": "ZismailDev <nattapong130247@gmail.com>",
   "contributors": [
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@cmru-comsci-66/e-sport-database": "1.0.2",
-    "@cmru-comsci-66/e-sport-nextjs-server": "1.0.3",
+    "@cmru-comsci-66/e-sport-nextjs-server": "1.2.1",
     "@fortawesome/fontawesome-svg-core": "6.5.1",
     "@fortawesome/free-brands-svg-icons": "6.5.1",
     "@fortawesome/free-solid-svg-icons": "6.5.1",
