@@ -31,7 +31,7 @@ export default function Profile() {
                                     src={session.user.image}
                                 />
                             </div>
-                            <div className='md:text-right mt-5'>
+                            <div className='md:text-right mt-1'>
                                 <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
                                     UserName
                                 </h2>
@@ -42,6 +42,10 @@ export default function Profile() {
                             ทีมของฉัน
                         </h2>
                         <h4 className="text-xl tracking-tight text-gray-600 mb-8">G2 Esport</h4>
+                        <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
+                            Role
+                        </h2>
+                        <h4 className="text-xl tracking-tight text-gray-600 mb-8">{session.user.role}</h4>
                     </div>
                 ) : (
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center">No Data</h2>

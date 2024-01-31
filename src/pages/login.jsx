@@ -4,10 +4,13 @@ import Head from 'next/head';
 import { Input, Button, Link } from '@nextui-org/react';
 import { useSession, signIn } from 'next-auth/react';
 import { useRouter } from 'next/router';
+
+// Icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
+// Contents
 export default function Login() {
     const { data: session } = useSession();
     const router = useRouter();

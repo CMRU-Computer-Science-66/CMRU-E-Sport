@@ -45,7 +45,7 @@ export default function FooterComp() {
                         </a>
                     </span>
                     <span className="text-center text-gray-500  dark:text-gray-400 sm:text-center">
-                        <p>Copyright © <a href="#" className="text-gray-500 hover:text-red-500 dark:hover:text-white">CMRU E-Sport</a> ALL Rights Reserved 2024</p>
+                        <p>Copyright © <a href="https://cmru-e-sport.vercel.app/" className="text-gray-500 hover:text-red-500 dark:hover:text-white">CMRU E-Sport</a> ALL Rights Reserved 2024</p>
                     </span>
                 </div>
                 <div className="lg:my-5" />
