@@ -5,7 +5,7 @@ import { nextAuthOptions } from '@cmru-comsci-66/e-sport-nextjs-server';
 
 export default NextAuth(await nextAuthOptions(PrismaAdapter(prisma), {
       NextAuth: {
-         SECRET: process.env.NEXTAUTH_SECRET 
+         Secret: process.env.NEXTAUTH_SECRET
       },
       DiscordProvider: {
          clientId: process.env.DISCORD_ID,
