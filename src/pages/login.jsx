@@ -1,5 +1,5 @@
 // Components
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import { Input, Button, Link } from '@nextui-org/react';
 import { useSession, signIn } from 'next-auth/react';
@@ -12,8 +12,14 @@ import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 // Contents
 export default function Login() {
-    const { data: session } = useSession();
-    const router = useRouter();
+   const { data: session } = useSession();
+   const router = useRouter();
+   const [username, setUsername] = useState('');
+   const [password, setPassword] = useState('');
+
+   function login() {
+      signIn("login-username", { username, password },)
+   }
 
     return (
         <div>
@@ -27,24 +33,28 @@ export default function Login() {
                 <div className="bg-white p-8 rounded-md shadow-md w-full max-w-md">
                     <h1 className="text-3xl font-bold mb-6 text-center">เข้าสู่ระบบ</h1>
                     <div className="mb-4">
-                        <Input
-                            name="username"
-                            type="text"
-                            label="Username"
-                            placeholder="Enter your Username"
-                        />
+                       <Input
+                          name="username"
+                          type="text"
+                          label="Username"
+                          placeholder="Enter your Username"
+                          value={username}
+                          onChange={(e) => setUsername(e.target.value)}
+                       />
                     </div>
                     <div className="mb-6">
-                        <Input
-                            name="password"
-                            type="password"
-                            label="Password"
-                            placeholder="Enter your Password"
-                        />
+                       <Input
+                          name="password"
+                          type="password"
+                          label="Password"
+                          placeholder="Enter your Password"
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                       />
                     </div>
                     <div className='p-2'>
                         <Button
-                            onClick={() => signIn('github', { redirect: false }).then(() => router.push('/'))}
+                            onClick={() => login()}
                             radius="full"
                             className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full"
                         >
