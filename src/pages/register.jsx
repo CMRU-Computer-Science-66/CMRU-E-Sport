@@ -8,9 +8,10 @@ import {  signIn } from 'next-auth/react';
 export default function SignUp() {
    const [username, setUsername] = useState('');
    const [password, setPassword] = useState('');
+   const [confirmPassword, setConfirmPassword] = useState('');
 
    function register() {
-      signIn("register-username", { username, password },)
+      signIn("register-username", { username, password, confirmPassword },)
    }
 
     return (
@@ -66,14 +67,15 @@ export default function SignUp() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
-                    {/* <div className="mb-6">
+                    <div className="mb-6">
                         <Input
                             name="confirmPassword"
                             type="password"
                             label="Confirm Password"
                             placeholder="Confirm Password"
+                            onChange={(e) => setConfirmPassword(e.target.value)}
                         />
-                    </div> */}
+                    </div>
                     <div className="mb-6">
                         <Checkbox
                         >
