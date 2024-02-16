@@ -1,0 +1,45 @@
+name: Code Formatter
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - '!.github/**'
+
+jobs:
+  format:
+    name: ESLint & Prettier
+    if: ${{ github.actor != 'renovate[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN_SUBMODULES }}
+          submodules: true
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          run_install: |
+            - args: [--no-frozen-lockfile, --ignore-scripts]
+          version: ${{ vars.PNPM_VERSION }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Run ESLint
+        run: pnpm run lint
+
+      - name: Run Prettier
+        run: pnpm run former
+
+      - name: Automatically Commit Changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          push_options: '--force'
+          commit_options: '--no-verify'
+          commit_message: 'Code Formatting'
+          skip_checkout: true
