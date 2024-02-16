@@ -19,6 +19,7 @@ export default function Login() {
 
     function login() {
         signIn("login-username", { username, password },)
+        .then(() => router.push('/'))
     }
 
     return (

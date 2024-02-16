@@ -104,6 +104,7 @@ export default function NavbarComp() {
                                     </Link>
                                 </DropdownItem>
                             ) : null}
+
                             <DropdownItem key="payment">จ่ายเงิน</DropdownItem>
                             <DropdownItem href="/contents/manageteam">จัดการทีม</DropdownItem>
                             <DropdownItem key="signOut" color="danger" onClick={handleSignOut}>
