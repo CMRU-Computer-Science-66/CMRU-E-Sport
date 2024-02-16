@@ -10,7 +10,7 @@ export default function DashboardPage() {
                 <title>ScoreBoard E-Sport</title>
                 <meta name="description" content="overviwe of admin form cmru e-sport club" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.ico" />
             </Head>
             <Navadmin />
             <main className="flex-1 p-5">

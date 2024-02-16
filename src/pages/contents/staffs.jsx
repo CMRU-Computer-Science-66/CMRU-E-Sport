@@ -17,17 +17,29 @@ export default function Staff() {
                 <title>Staff E-Sport</title>
                 <meta name="description" content="Staff E-Sport" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.ico" />
             </Head>
             <div className="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8 text-center p-5">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Staff List</h2>
                 <h4 className="text-xl text-gray-600 mt-2">รายชื่อทีมงาน</h4>
 
-                <h2 className="text-left text-3xl font-bold tracking-tight sm:text-4xl">แกนนำ</h2>
+                <h2 className="text-center text-xl font-bold tracking-tight sm:text-4xl mt-5">อาจารย์ที่ปรึกษาชมรม</h2>
+                <div className="grid gap-6 mt-8 mx-auto md:grid-cols-1">
+                    <div key={0} shadow="sm" isPressable={false} className="text-center p-4">
+                        <div className="flex flex-col items-center">
+                            <Image src={StaffData[0].img} alt={StaffData[0].title} width={250} height={100} />
+                            <h4 className="text-lg font-semibold mt-4">{StaffData[0].title}</h4>
+                            <h4 className="text-sm text-gray-500">{StaffData[0].staffrole}</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 className="text-left text-3xl font-bold tracking-tight sm:text-4xl mt-5">Club Leader</h2>
+                <h4 className="text-left text-xl text-gray-600">กรรมการบริหารชมรม</h4>
                 <div className="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    {StaffData.map((item, index) => (
+                    {StaffData.slice(1).map((item, index) => ( // เริ่มต้นที่ index 1
                         <Link key={index} href={`/staffs/${encodeURIComponent(item.title)}`}>
-                            <Card key={index} shadow="sm" isPressable={false} className="text-center p-4">
+                            <Card key={index} shadow="sm" isPressable={false} className="text-center p-4 hover:scale-105">
                                 <div className="flex flex-col items-center">
                                     <Image src={item.img} alt={item.title} width={100} height={100} className="rounded-full" />
                                     <h4 className="text-lg font-semibold mt-4">{item.title}</h4>
@@ -41,10 +53,11 @@ export default function Staff() {
                 </div>
 
                 <h2 className="text-left text-3xl font-bold tracking-tight sm:text-4xl mt-10">Staff</h2>
+                <h4 className="text-left text-xl text-gray-600">ทีมงาน</h4>
                 <div className="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {Staff2Data.map((item, index) => (
                         <Link key={index} href={`/staffs/${encodeURIComponent(item.title)}`}>
-                            <Card key={index} shadow="sm" isPressable={false} className="text-center p-4">
+                            <Card key={index} shadow="sm" isPressable={false} className="text-center p-4 hover:scale-105">
                                 <div className="flex flex-col items-center">
                                     <Image src={item.img} alt={item.title} width={100} height={100} className="rounded-full" />
                                     <h4 className="text-lg font-semibold mt-4">{item.title}</h4>
@@ -58,10 +71,11 @@ export default function Staff() {
                 </div>
 
                 <h2 className="text-left text-3xl font-bold tracking-tight sm:text-4xl mt-10">Web Developer</h2>
+                <h4 className="text-left text-xl text-gray-600">ทีมนักพัฒนาเว็บไซต์</h4>
                 <div className="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {DevData.map((item, index) => (
                         <Link key={index} href={`/staffs/${encodeURIComponent(item.title)}`}>
-                            <Card key={index} shadow="sm" isPressable={false} className="text-center p-4">
+                            <Card key={index} shadow="sm" isPressable={false} className="text-center p-4 hover:scale-105">
                                 <div className="flex flex-col items-center">
                                     <Image src={item.img} alt={item.title} width={100} height={100} className="rounded-full" />
                                     <h4 className="text-lg font-semibold mt-4">{item.title}</h4>

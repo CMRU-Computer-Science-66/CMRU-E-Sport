@@ -19,7 +19,7 @@ export default function Home() {
                 <title>CMRU E-Sport</title>
                 <meta name="description" content="this web site for cmru e-sport club community" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.ico" />
             </Head>
             <div className="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8 text-center p-5">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl"> CMRU E-Sport</h2>
@@ -93,7 +93,7 @@ export default function Home() {
                     ))}
                 </div>
 
-                <div className="text-left">
+                <div className="text-left mt-10">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center">Team Building Agreement</h2>
                     <h4 className="text-xl text-gray-600 text-center mt-2">ข้อตกลงการสร้างทีม</h4>
                     <ul className="text-xl text-gray-600 list-disc pl-5 mt-2">

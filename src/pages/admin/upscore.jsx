@@ -12,7 +12,7 @@ export default function UpdateScore() {
                 <title>UpdateScore E-Sport</title>
                 <meta name="description" content="update socre for member cmru e-sport club community" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.ico" />
             </Head>
             <Navadmin />
             <main className="flex-1 p-5">

@@ -14,7 +14,7 @@ export default function Profile() {
                 <title>Profile E-Sport</title>
                 <meta name="description" content="See your profile and edit yoru cmru e-sport club community" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.ico" />
             </Head>
             <div className="mx-auto max-w-5xl sm:px-6 sm:py-32 lg:px-8 text-left p-5">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center">Profile</h2>

@@ -12,7 +12,7 @@ export default function Recruiting() {
                 <title>Recruiting E-Sport</title>
                 <meta name="description" content="Recruiting cmru E-Sport club community" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.ico" />
             </Head>
             <Navadmin />
             <main className="flex-1 p-5">

@@ -11,7 +11,7 @@ export default function RegisterTeam() {
                 <title>Apply To Compete E-Sport</title>
                 <meta name="description" content="Apply To Compete E-Sport" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.ico" />
             </Head>
             <div className="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8 min-h-screen flex justify-center items-center">
                 <div className="bg-white p-8 rounded-md shadow-md w-full max-w-md">

@@ -16,7 +16,7 @@ export default function Team() {
                 <title>Team E-Sport</title>
                 <meta name="description" content="Cmru E-sport Teams Proleague" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.ico" />
             </Head>
             <div className="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8 text-center p-5">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-2">Team List</h2>

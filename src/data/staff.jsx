@@ -12,7 +12,7 @@ export const StaffData = [
     },
 
     {
-        title: "ปีโป้ คุง",
+        title: "P'ปีโป้",
         staffrole: "ประธานชมรม",
         img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
         faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
@@ -21,7 +21,7 @@ export const StaffData = [
         instagram: "",
     },
     {
-        title: "หนึ่ง",
+        title: "P'หนึ่ง",
         staffrole: "รองประธานชมรม",
         img: "https://i.pravatar.cc/150?u=a04258a2462d826712d",
         major: "วิทยาการคอมพิวเตอร์",
@@ -30,11 +30,56 @@ export const StaffData = [
         instagram: "https://www.instagram.com/xz1smail/?hl=th",
     },
     {
-        title: "Sofia",
-        staffrole: "เลขา",
+        title: "P'ตั้น",
+        staffrole: "กรรมการ",
         img: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
         faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
+        major: "วิทยาการคอมพิวเตอร์",
+        facebook: "",
+        instagram: "",
+    },
+    {
+        title: "Edwin",
+        staffrole: "สถานที่",
+        img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+        faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
         major: "นวัตกรรมดิจิทัล",
+        facebook: "",
+        instagram: "",
+    },
+    {
+        title: "P' ติง",
+        staffrole: "สถานที่",
+        img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+        faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
+        major: "วิทยาการคอมพิวเตอร์",
+        facebook: "",
+        instagram: "",
+    },
+    {
+        title: "Edwin",
+        staffrole: "สถานที่",
+        img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+        faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
+        major: "นวัตกรรมดิจิทัล",
+        facebook: "",
+        instagram: "",
+    },
+    {
+        title: "P' ฟิว",
+        staffrole: "กรรมการ",
+        img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+        faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
+        major: "นวัตกรรมดิจิทัล",
+        facebook: "",
+        instagram: "",
+    },
+    {
+        title: "นัท",
+        staffrole: "กรรมการ",
+        img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+        faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
+        major: "วิทยาการคอมพิวเตอร์",
         facebook: "",
         instagram: "",
     },
@@ -50,16 +95,6 @@ export const StaffData = [
 ];
 
 export const Staff2Data = [
-    {
-        title: "อาจารย์ ดร.พิรุฬห์ แก้วฟุ้งรังษี",
-        staffrole: "ผู้ก่อตั้งชมรม",
-        img: piroonImg,
-        faculty: "",
-        major: "",
-        facebook: "",
-        instagram: "",
-    },
-
     {
         title: "ปีโป้ คุง",
         staffrole: "ประธานชมรม",
