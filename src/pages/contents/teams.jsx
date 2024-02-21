@@ -32,7 +32,7 @@ export default function Team() {
                 <div className='aspect-w-3 aspect-h-2'>
                   <Image
                     alt={item.title}
-                    src={item.img}
+                    src={item.teamImage}
                     width={200}
                     height={250}
                     className='object-cover'

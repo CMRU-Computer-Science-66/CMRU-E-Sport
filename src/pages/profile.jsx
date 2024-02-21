@@ -48,6 +48,12 @@ export default function Profile() {
               </div>
             </div>
             <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
+              E-Mail
+            </h2>
+            <h4 className='mb-8 text-xl tracking-tight text-gray-600'>
+              {session.user.email}
+            </h4>
+            <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
               ทีมของฉัน
             </h2>
             <h4 className='mb-8 text-xl tracking-tight text-gray-600'>

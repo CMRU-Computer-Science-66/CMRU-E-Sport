@@ -30,7 +30,7 @@ export default function TeamPage() {
             <div className='mt-8 grid grid-cols-1 gap-8 md:grid-cols-2'>
               <div>
                 <Image
-                  src={team.img}
+                  src={team.teamImage}
                   alt={team.title}
                   className='rounded-lg'
                   width={200}

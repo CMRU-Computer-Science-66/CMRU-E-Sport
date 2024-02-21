@@ -11,7 +11,7 @@ import EvilImg from '@/assets/team/evil.png';
 export const TeamData = [
   {
     title: 'G2 Esports',
-    img: G2Img,
+    teamImage: G2Img,
     members: [
       {
         name: 'NiKo',
@@ -35,7 +35,7 @@ export const TeamData = [
   },
   {
     title: 'Cloud9',
-    img: Cloud9Img,
+    teamImage: Cloud9Img,
     members: [
       {
         position: 'Top',
@@ -75,7 +75,7 @@ export const TeamData = [
   },
   {
     title: 'Astralis',
-    img: AstralisImg,
+    teamImage: AstralisImg,
     members: [
       {
         role: 'Top',
@@ -115,7 +115,7 @@ export const TeamData = [
   },
   {
     title: 'Team Liquid',
-    img: LiquidImg,
+    teamImage: LiquidImg,
     members: [
       { handle: 'Yeon', name: 'Sung, Sean', nationality: 'United States' },
       { handle: 'UmTi', name: 'Seong-hyeon, Eom', nationality: 'South Korea' },
@@ -134,7 +134,7 @@ export const TeamData = [
   },
   {
     title: 'FaZe Clan',
-    img: FaZeImg,
+    teamImage: FaZeImg,
     members: [
       { handle: 'rain', name: 'Nygaard, Håvard', nationality: 'Norway' },
       { handle: 'broky', name: 'Saukants, Helvijs', nationality: 'Latvia' },
@@ -154,7 +154,7 @@ export const TeamData = [
   },
   {
     title: 'Fnatic',
-    img: FnaticImg,
+    teamImage: FnaticImg,
     members: [
       { handle: 'rain', name: 'Nygaard, Håvard', nationality: 'Norway' },
       { handle: 'broky', name: 'Saukants, Helvijs', nationality: 'Latvia' },
@@ -174,7 +174,7 @@ export const TeamData = [
   },
   {
     title: 'Natus Vincere',
-    img: NatusImg,
+    teamImage: NatusImg,
     members: [
       { handle: 'w0nderful', name: 'Zhdanov, Ihor', nationality: 'Ukraine' },
       { handle: 'b1t', name: 'Vakhovskyi, Valerii', nationality: 'Ukraine' },
@@ -194,7 +194,7 @@ export const TeamData = [
   },
   {
     title: 'FURIA',
-    img: FuriaImg,
+    teamImage: FuriaImg,
     members: [
       { handle: 'FalleN', name: 'Toledo, Gabriel', nationality: 'Brazil' },
       { handle: 'chelo', name: 'Cespedes, Marcelo', nationality: 'Brazil' },
@@ -209,7 +209,7 @@ export const TeamData = [
   },
   {
     title: 'Evil Geniuses',
-    img: EvilImg,
+    teamImage: EvilImg,
     members: [
       {
         handle: 'autimatic',
@@ -232,77 +232,5 @@ export const TeamData = [
       headCoach: "Tommy 'Axed' Ryan",
       assistantCoaches: null,
     },
-  },
-];
-
-export const ScoreListData = [
-  {
-    tournament: 'CMRU Pro League',
-    teams: [
-      {
-        name: 'G2 Esports',
-        matchesPlayed: 5,
-        wins: 4,
-        losses: 0,
-        draws: 1,
-        totalPoints: 13,
-      },
-      {
-        name: 'Cloud9',
-        matchesPlayed: 5,
-        wins: 2,
-        losses: 2,
-        draws: 1,
-        totalPoints: 7,
-      },
-      {
-        name: 'Astralis',
-        matchesPlayed: 5,
-        wins: 1,
-        losses: 3,
-        draws: 1,
-        totalPoints: 4,
-      },
-      {
-        name: 'Team Liquid',
-        matchesPlayed: 5,
-        wins: 3,
-        losses: 1,
-        draws: 1,
-        totalPoints: 10,
-      },
-      {
-        name: 'Fnatic',
-        matchesPlayed: 0,
-        wins: 0,
-        losses: 0,
-        draws: 0,
-        totalPoints: 0,
-      },
-      {
-        name: 'Natus Vincere',
-        matchesPlayed: 0,
-        wins: 0,
-        losses: 0,
-        draws: 0,
-        totalPoints: 0,
-      },
-      {
-        name: 'FURIA',
-        matchesPlayed: 0,
-        wins: 0,
-        losses: 0,
-        draws: 0,
-        totalPoints: 0,
-      },
-      {
-        name: 'Evil Geniuses',
-        matchesPlayed: 0,
-        wins: 0,
-        losses: 0,
-        draws: 0,
-        totalPoints: 0,
-      },
-    ],
   },
 ];

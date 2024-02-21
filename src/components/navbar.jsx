@@ -17,11 +17,23 @@ import {
   Link,
 } from '@nextui-org/react';
 import { AcmeLogo } from './acmelogo.jsx';
+import SkeletonComponent from './skeleton.jsx';
 import { useSession, signOut } from 'next-auth/react';
 
 // Contents
 export default function NavbarComp() {
   const { data: session } = useSession();
+  const [loading, setLoading] = useState(true); // State for loading
+
+  useEffect(() => {
+    // Simulate loading delay
+    const timeoutId = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const handleSignOut = async () => {
@@ -79,52 +91,58 @@ export default function NavbarComp() {
       </NavbarContent>
 
       <NavbarContent as='div' justify='end'>
-        {session ? (
-          <Dropdown placement='bottom-end'>
-            <DropdownTrigger>
-              <Avatar
-                isBordered
-                as='button'
-                className='transition-transform'
-                color='secondary'
-                name='username'
-                size='sm'
-                src={session.user.image}
-              />
-            </DropdownTrigger>
-            <DropdownMenu aria-label='Profile Actions' variant='flat'>
-              <DropdownItem className='h-14 gap-2' href='/profile'>
-                <p className='font-semibold'>บัญชีผู้ใช้</p>
-                <p className='font-semibold'>{session.user.name}</p>
-              </DropdownItem>
-              {session &&
-              (session.user.role === 'admin' ||
-                session.user.role === 'developer') ? (
-                <DropdownItem>
-                  <Link href='/admin/dashboard'>เมนูแอดมิน</Link>
-                </DropdownItem>
-              ) : null}
-
-              <DropdownItem key='payment'>จ่ายเงิน</DropdownItem>
-              <DropdownItem href='/contents/manageteam'>จัดการทีม</DropdownItem>
-              <DropdownItem
-                key='signOut'
-                color='danger'
-                onClick={handleSignOut}
-              >
-                ออกจากระบบ
-              </DropdownItem>
-            </DropdownMenu>
-          </Dropdown>
+        {loading ? (
+          <SkeletonComponent />
         ) : (
-          <Button
-            radius='full'
-            className='bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg'
-          >
-            <Link href='/login' color='foreground'>
-              Login
-            </Link>
-          </Button>
+          <>
+            {session ? (
+              <Dropdown placement='bottom-end'>
+                <DropdownTrigger>
+                  <Avatar
+                    isBordered
+                    as='button'
+                    className='transition-transform'
+                    color='secondary'
+                    name='username'
+                    size='sm'
+                    src={session.user.image}
+                  />
+                </DropdownTrigger>
+                <DropdownMenu aria-label='Profile Actions' variant='flat'>
+                  <DropdownItem className='h-14 gap-2' href='/profile'>
+                    <p className='font-semibold'>บัญชีผู้ใช้</p>
+                    <p className='font-semibold'>{session.user.name}</p>
+                  </DropdownItem>
+                  {session &&
+                    (session.user.role === 'admin' ||
+                      session.user.role === 'developer') ? (
+                    <DropdownItem>
+                      <Link href='/admin/dashboard'>เมนูแอดมิน</Link>
+                    </DropdownItem>
+                  ) : null}
+
+                  <DropdownItem key='payment'>จ่ายเงิน</DropdownItem>
+                  <DropdownItem href='/contents/manageteam'>จัดการทีม</DropdownItem>
+                  <DropdownItem
+                    key='signOut'
+                    color='danger'
+                    onClick={handleSignOut}
+                  >
+                    ออกจากระบบ
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+            ) : (
+              <Button
+                radius='full'
+                className='bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg'
+              >
+                <Link href='/login' color='foreground'>
+                  Login
+                </Link>
+              </Button>
+            )}
+          </>
         )}
       </NavbarContent>
 

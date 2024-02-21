@@ -9,11 +9,9 @@ import {
   TableCell,
   TableColumn,
 } from '@nextui-org/react';
-
-// Data
+import Image from 'next/image';
 import { ScoreListData } from '@/data/score';
 
-// Contents
 export default function Scoreboard() {
   const sortedTeams = ScoreListData[0].teams.sort(
     (a, b) => b.totalPoints - a.totalPoints
@@ -21,8 +19,15 @@ export default function Scoreboard() {
 
   const columns = [
     {
-      key: 'name',
+      key: 'team',
       label: 'Team',
+      render: (team) => (
+        <div className="flex items-center">
+          <Image src={team.teamImage} alt={team.name} className="w-8 h-8 rounded-full mr-2" />
+
+          <span>{team.name}</span>
+        </div>
+      ),
     },
     {
       key: 'matchesPlayed',
@@ -63,14 +68,16 @@ export default function Scoreboard() {
           <Table aria-label='Example table with dynamic content'>
             <TableHeader columns={columns}>
               {(column) => (
-                <TableColumn key={column.key}>{column.label}</TableColumn>
+                <TableColumn key={column.key} className="border-gray-300">{column.label}</TableColumn>
               )}
             </TableHeader>
-            <TableBody items={ScoreListData[0].teams}>
-              {(item) => (
-                <TableRow key={item.name}>
+            <TableBody items={sortedTeams}>
+              {(team) => (
+                <TableRow key={team.name} className="border-gray-300">
                   {columns.map((column) => (
-                    <TableCell key={column.key}>{item[column.key]}</TableCell>
+                    <TableCell key={column.key} className="border-gray-300">
+                      {column.render ? column.render(team) : team[column.key]}
+                    </TableCell>
                   ))}
                 </TableRow>
               )}
