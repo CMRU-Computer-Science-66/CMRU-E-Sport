@@ -22,7 +22,7 @@ export default function UpdateScore() {
           <h1 className='text-4xl font-extrabold text-gray-900 sm:text-5xl'>
             Update Score for Members
           </h1>
-          <p className='mt-3 max-w-3xl mx-auto text-xl text-gray-500 sm:mt-4'>
+          <p className='mx-auto mt-3 max-w-3xl text-xl text-gray-500 sm:mt-4'>
             Update the scores of members in the CMRU E-Sport club community.
           </p>
           <UsageComp />

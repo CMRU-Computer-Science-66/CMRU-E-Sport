@@ -22,8 +22,12 @@ export default function Scoreboard() {
       key: 'team',
       label: 'Team',
       render: (team) => (
-        <div className="flex items-center">
-          <Image src={team.teamImage} alt={team.name} className="w-8 h-8 rounded-full mr-2" />
+        <div className='flex items-center'>
+          <Image
+            src={team.teamImage}
+            alt={team.name}
+            className='mr-2 h-8 w-8 rounded-full'
+          />
 
           <span>{team.name}</span>
         </div>
@@ -68,14 +72,16 @@ export default function Scoreboard() {
           <Table aria-label='Example table with dynamic content'>
             <TableHeader columns={columns}>
               {(column) => (
-                <TableColumn key={column.key} className="border-gray-300">{column.label}</TableColumn>
+                <TableColumn key={column.key} className='border-gray-300'>
+                  {column.label}
+                </TableColumn>
               )}
             </TableHeader>
             <TableBody items={sortedTeams}>
               {(team) => (
-                <TableRow key={team.name} className="border-gray-300">
+                <TableRow key={team.name} className='border-gray-300'>
                   {columns.map((column) => (
-                    <TableCell key={column.key} className="border-gray-300">
+                    <TableCell key={column.key} className='border-gray-300'>
                       {column.render ? column.render(team) : team[column.key]}
                     </TableCell>
                   ))}

@@ -20,7 +20,7 @@ export default function DashboardPage() {
           <h1 className='text-4xl font-extrabold text-gray-900 sm:text-5xl'>
             Welcome to the Admin Dashboard
           </h1>
-          <p className='mt-3 max-w-3xl mx-auto text-xl text-gray-500 sm:mt-4'>
+          <p className='mx-auto mt-3 max-w-3xl text-xl text-gray-500 sm:mt-4'>
             Overview and manage the activities of CMRU E-Sport Club.
           </p>
           {/* Add more content as needed */}

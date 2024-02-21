@@ -21,8 +21,9 @@ export default function Recruiting() {
           <h1 className='text-4xl font-extrabold text-gray-900 sm:text-5xl'>
             CMRU E-Sport Recruiting
           </h1>
-          <p className='mt-3 max-w-3xl mx-auto text-xl text-gray-500 sm:mt-4'>
-            Join our E-Sport club community! We are currently recruiting new members.
+          <p className='mx-auto mt-3 max-w-3xl text-xl text-gray-500 sm:mt-4'>
+            Join our E-Sport club community! We are currently recruiting new
+            members.
           </p>
           <UsageComp />
           {/* Add more content as needed */}

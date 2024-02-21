@@ -114,15 +114,17 @@ export default function NavbarComp() {
                     <p className='font-semibold'>{session.user.name}</p>
                   </DropdownItem>
                   {session &&
-                    (session.user.role === 'admin' ||
-                      session.user.role === 'developer') ? (
+                  (session.user.role === 'admin' ||
+                    session.user.role === 'developer') ? (
                     <DropdownItem>
                       <Link href='/admin/dashboard'>เมนูแอดมิน</Link>
                     </DropdownItem>
                   ) : null}
 
                   <DropdownItem key='payment'>จ่ายเงิน</DropdownItem>
-                  <DropdownItem href='/contents/manageteam'>จัดการทีม</DropdownItem>
+                  <DropdownItem href='/contents/manageteam'>
+                    จัดการทีม
+                  </DropdownItem>
                   <DropdownItem
                     key='signOut'
                     color='danger'
