@@ -34,7 +34,7 @@ jobs:
            run: pnpm run eslint:lint
 
          - name: Run Prettier
-           run: pnpm run former
+           run: pnpm run format
 
          - name: Automatically Commit Changed
            uses: stefanzweifel/git-auto-commit-action@v5
