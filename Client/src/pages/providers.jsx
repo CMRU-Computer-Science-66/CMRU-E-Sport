@@ -3,7 +3,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import { useRouter } from "next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-export default function Providers({ children, themeProps }) {
+export function Providers({ children, themeProps }) {
 	const router = useRouter();
 
 	return (
