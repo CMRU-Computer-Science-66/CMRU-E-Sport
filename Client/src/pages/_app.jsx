@@ -37,16 +37,16 @@ export default function App({
 
 	const Main = (
 		<SessionProvider session={session}>
-			<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+			<Providers themeProps={{ attribute: "class", defaultTheme: "system" }}>
 				<div className="relative flex h-screen flex-col">
 					<Navbar />
 					<main className="container mx-auto max-w-7xl flex-grow px-6 pt-16">
 						<Component {...pageProps} />
 					</main>
-					<footer className="flex w-full items-center justify-center py-3">
-						<Link isExternal className="flex items-center gap-1 text-current">
+					<footer className="flex w-full select-none items-center justify-center py-3">
+						<Link isExternal className="flex items-center gap-1">
 							<span className="text-default-600">จัดทำโดย</span>
-							<p className="text-primary">CMRU E Sport</p>
+							<p>CMRU E Sport</p>
 						</Link>
 					</footer>
 				</div>

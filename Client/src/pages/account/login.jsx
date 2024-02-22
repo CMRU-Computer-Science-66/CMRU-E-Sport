@@ -34,7 +34,7 @@ export default function Login() {
 
 	return (
 		<>
-			<div className="flex  flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+			<div className="flex flex-1 select-none flex-col justify-center px-6 py-12 lg:px-8">
 				<div className="sm:mx-auto sm:w-full sm:max-w-sm">
 					<h1 className="text-center text-4xl font-bold leading-9 tracking-tight">
 						ลงชื่อเข้าใช้งาน

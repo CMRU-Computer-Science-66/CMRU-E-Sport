@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "@cmru-e-sport/client",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"scripts": {
 		"build": "next build",
 		"clean": "del-cli .next",
