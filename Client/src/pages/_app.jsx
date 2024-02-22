@@ -1,7 +1,7 @@
-import "../styles/globals.css";
+import "@/styles/globals.css";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import Providers from "./providers";
+import Providers from "@/pages/providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
@@ -55,11 +55,7 @@ export default function App({
 							<Component {...pageProps} />
 						</main>
 						<footer className="flex w-full items-center justify-center py-3">
-							<Link
-								isExternal
-								className="flex items-center gap-1 text-current"
-								href=""
-							>
+							<Link isExternal className="flex items-center gap-1 text-current">
 								<span className="text-default-600">จัดทำโดย</span>
 								<p className="text-primary">CMRU E Sport</p>
 							</Link>

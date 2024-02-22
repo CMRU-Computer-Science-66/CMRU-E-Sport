@@ -1,9 +1,9 @@
 {
 	"name": "cmru-e-sport",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"license": "apache-2.0",
 	"scripts": {
-		"clean": "tsm ./script/clean-temp.ts && pnpm --filter=* clean",
+		"clean": "pnpm --filter=* clean",
 		"client": "pnpm -w --filter=./Client ",
 		"dev": "pnpm --parallel --filter=* dev",
 		"eslint:fix": "pnpm --parallel --filter=* lint:fix",
@@ -18,7 +18,7 @@
 	"workspaces": [
 		"./Client"
 	],
-	"dependencies": {
+	"devDependencies": {
 		"@types/node": "20.11.19",
 		"@typescript-eslint/eslint-plugin": "7.0.2",
 		"@typescript-eslint/parser": "7.0.2",
@@ -42,9 +42,7 @@
 		"pre-commit": "pnpm lint-staged"
 	},
 	"lint-staged": {
-		"*": [
-			"prettier --write --ignore-unknown"
-		],
+		"**/*": "prettier --write --ignore-unknown",
 		"**/package.json": [
 			"prettier-package-json --write --use-tabs 3"
 		]
