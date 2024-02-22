@@ -1,9 +1,9 @@
 import * as React from "react";
 import { NextUIProvider } from "@nextui-org/react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-export function Providers({ children, themeProps }) {
+export default function Providers({ children, themeProps }) {
 	const router = useRouter();
 
 	return (

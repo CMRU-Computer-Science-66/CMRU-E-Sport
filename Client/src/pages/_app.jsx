@@ -59,10 +59,9 @@ export default function App({
 								isExternal
 								className="flex items-center gap-1 text-current"
 								href=""
-								title="nextui.org homepage"
 							>
 								<span className="text-default-600">จัดทำโดย</span>
-								<p className="text-primary">CMRU</p>
+								<p className="text-primary">CMRU E Sport</p>
 							</Link>
 						</footer>
 					</div>
