@@ -1,0 +1,8 @@
+# Dependencies
+node_modules
+
+# Dotenv Environment
+.env
+
+# Client
+Client/.next
