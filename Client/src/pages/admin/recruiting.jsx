@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import UsageComp from "@/components/admin/usage";
+// import UsageComp from "@/components/admin/usage";
 
 export default function Recruiting() {
 	return (
@@ -23,8 +23,7 @@ export default function Recruiting() {
 						Join our E-Sport club community! We are currently recruiting new
 						members.
 					</p>
-					<UsageComp />
-					{/* Add more content as needed */}
+					{/* <UsageComp /> */}
 				</div>
 			</main>
 		</div>
