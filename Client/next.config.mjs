@@ -8,6 +8,9 @@ const nextConfig = {
 		}
 		return config;
 	},
+	images: {
+		domains: ['i.pravatar.cc', 'images.unsplash.com'],
+	  },
 };
 
 export default nextConfig;
