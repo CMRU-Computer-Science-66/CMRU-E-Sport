@@ -9,8 +9,8 @@ const nextConfig = {
 		return config;
 	},
 	images: {
-		domains: ['i.pravatar.cc', 'images.unsplash.com'],
-	  },
+		domains: ["i.pravatar.cc", "images.unsplash.com"],
+	},
 };
 
 export default nextConfig;
