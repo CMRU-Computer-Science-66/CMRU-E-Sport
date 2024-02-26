@@ -31,7 +31,7 @@ jobs:
               cache: pnpm
 
          - name: Run ESLint
-           run: pnpm run eslint:lint
+           run: pnpm run eslint:fix
 
          - name: Run Prettier
            run: pnpm run format
