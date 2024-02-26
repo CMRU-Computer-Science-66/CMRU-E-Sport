@@ -1,6 +1,5 @@
-// pages/updateScore.js
-import React from "react";
 import Head from "next/head";
+import React from "react";
 // import UsageComp from "@/components/admin/usage";
 // import Navadmin from "@/components/admin/navadmin";
 
@@ -10,11 +9,11 @@ export default function UpdateScore() {
 			<Head>
 				<title>UpdateScore E-Sport</title>
 				<meta
-					name="description"
 					content="Update score for members of CMRU E-Sport club community"
+					name="description"
 				/>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/logo.ico" />
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<link href="/logo.ico" rel="icon" />
 			</Head>
 			{/* <Navadmin /> */}
 			<main className="flex-1 p-5">

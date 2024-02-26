@@ -1,7 +1,7 @@
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import NextAuth from "next-auth";
 import database from "@cmru-comsci-66/e-sport-database";
 import { nextAuthOptions } from "@cmru-comsci-66/e-sport-nextjs-server";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import NextAuth from "next-auth";
 
 export default async function auth(req, res) {
 	return await NextAuth(req, res, {

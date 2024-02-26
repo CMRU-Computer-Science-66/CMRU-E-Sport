@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Input, Button } from "@nextui-org/react";
-import { signIn as NextAuthSignIn } from "next-auth/react";
+import { Button, Input } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
+import { signIn as NextAuthSignIn } from "next-auth/react";
+import React, { useState } from "react";
 
 export default function Login() {
 	const router = useRouter();
@@ -11,12 +11,12 @@ export default function Login() {
 
 	async function register(provider) {
 		await NextAuthSignIn(provider, {
-			username,
-			password,
-			confirmPassword,
 			callbackUrl: "/",
+			confirmPassword,
+			password,
 			redirect: false,
-		}).then(({ ok, error }) => {
+			username,
+		}).then(({ error, ok }) => {
 			if (ok) {
 				router.push("/");
 			} else {
@@ -38,38 +38,38 @@ export default function Login() {
 						<div>
 							<div className="mb-4">
 								<Input
-									name="username"
-									type="text"
 									label="ชื่อผู้ใช้"
-									value={username}
+									name="username"
 									onChange={(e) => setUsername(e.target.value)}
+									type="text"
+									value={username}
 								/>
 							</div>
 						</div>
 						<div>
 							<div className="mb-4">
 								<Input
-									name="password"
-									type="password"
 									label="รหัสผ่าน"
-									value={password}
+									name="password"
 									onChange={(e) => setPassword(e.target.value)}
+									type="password"
+									value={password}
 								/>
 							</div>
 						</div>
 						<div className="mb-4">
 							<Input
-								name="confirmPassword"
-								type="password"
 								label="ยืนยันรหัสผ่าน"
+								name="confirmPassword"
 								onChange={(e) => setConfirmPassword(e.target.value)}
+								type="password"
 							/>
 						</div>
 					</div>
 					<div>
 						<Button
-							onClick={() => register("register-username")}
 							className="mt-4 w-full flex-row justify-center rounded-md bg-blue-400 px-5 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm"
+							onClick={() => register("register-username")}
 						>
 							เข้าสู่ระบบ
 						</Button>

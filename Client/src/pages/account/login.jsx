@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Input, Button } from "@nextui-org/react";
-import { signIn as NextAuthSignIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button, Input } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
+import { signIn as NextAuthSignIn } from "next-auth/react";
+import React, { useState } from "react";
 
 export default function Login() {
 	const router = useRouter();
@@ -12,17 +12,17 @@ export default function Login() {
 	const [password, setPassword] = useState("");
 
 	async function signIn(provider) {
-		if (["google", "discord", "github"].includes(provider)) {
+		if (["discord", "github", "google"].includes(provider)) {
 			NextAuthSignIn(provider, {
-				redirect: false,
 				callbackUrl: "/",
+				redirect: false,
 			});
 		} else {
 			NextAuthSignIn(provider, {
-				username,
 				password,
 				redirect: false,
-			}).then(({ ok, error }) => {
+				username,
+			}).then(({ error, ok }) => {
 				if (ok) {
 					router.push("/");
 				} else {
@@ -45,29 +45,29 @@ export default function Login() {
 						<div>
 							<div className="mb-4">
 								<Input
-									name="username"
-									type="text"
 									label="ชื่อผู้ใช้"
-									value={username}
+									name="username"
 									onChange={(e) => setUsername(e.target.value)}
+									type="text"
+									value={username}
 								/>
 							</div>
 						</div>
 						<div>
 							<div className="mb-4">
 								<Input
-									name="password"
-									type="password"
 									label="รหัสผ่าน"
-									value={password}
+									name="password"
 									onChange={(e) => setPassword(e.target.value)}
+									type="password"
+									value={password}
 								/>
 							</div>
 						</div>
 						<dev>
 							<Button
-								onClick={() => signIn("login-username")}
 								className="w-full flex-row justify-center rounded-md bg-blue-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm"
+								onClick={() => signIn("login-username")}
 							>
 								เข้าสู่ระบบ
 							</Button>
@@ -77,21 +77,21 @@ export default function Login() {
 						</p>
 						<div style={{ display: "flex", justifyContent: "stretch" }}>
 							<Button
+								className="w-full rounded-md bg-[#4285F4] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm"
 								onClick={() => signIn("google")}
 								startContent={
-									<FontAwesomeIcon className="h-4 w-4" icon={faGoogle} />
+									<FontAwesomeIcon className="size-4" icon={faGoogle} />
 								}
-								className="w-full rounded-md bg-[#4285F4] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm"
 							>
 								Google
 							</Button>
 							<span style={{ width: "1rem" }}></span> {}
 							<Button
+								className="w-full rounded-md bg-[#424549] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm"
 								onClick={() => signIn("discord")}
 								startContent={
-									<FontAwesomeIcon className="h-4 w-4" icon={faDiscord} />
+									<FontAwesomeIcon className="size-4" icon={faDiscord} />
 								}
-								className="w-full rounded-md bg-[#424549] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm"
 							>
 								Discord
 							</Button>

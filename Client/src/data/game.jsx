@@ -1,23 +1,23 @@
-import RovImg from "@/assets/game/rov.jpg";
-import PubgmImg from "@/assets/game/pubgm.png";
 import Fc24Img from "@/assets/game/fc24.jpeg";
+import PubgmImg from "@/assets/game/pubgm.png";
+import RovImg from "@/assets/game/rov.jpg";
 import ValoImg from "@/assets/game/valorant.png";
 
 export const GameListData = [
 	{
-		title: "ARENA OF VALOR",
 		img: RovImg,
+		title: "ARENA OF VALOR",
 	},
 	{
-		title: "PUBG Mobile",
 		img: PubgmImg,
+		title: "PUBG Mobile",
 	},
 	{
-		title: "EA SPORTS FC™ 24",
 		img: Fc24Img,
+		title: "EA SPORTS FC™ 24",
 	},
 	{
-		title: "Valorant",
 		img: ValoImg,
+		title: "Valorant",
 	},
 ];

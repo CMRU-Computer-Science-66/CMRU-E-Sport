@@ -1,121 +1,123 @@
-import G2Img from "@/assets/team/g2esport.png";
-import Cloud9Img from "@/assets/team/cloud9.png";
+import NatusImg from "@/assets/team/NatusVincere.png";
 import AstralisImg from "@/assets/team/astralis.png";
-import LiquidImg from "@/assets/team/teamliquid.png";
+import Cloud9Img from "@/assets/team/cloud9.png";
+import EvilImg from "@/assets/team/evil.png";
 import FaZeImg from "@/assets/team/faze.png";
 import FnaticImg from "@/assets/team/fnatic.png";
-import NatusImg from "@/assets/team/NatusVincere.png";
 import FuriaImg from "@/assets/team/furiaesport.png";
-import EvilImg from "@/assets/team/evil.png";
+import G2Img from "@/assets/team/g2esport.png";
+import LiquidImg from "@/assets/team/teamliquid.png";
 
 export const TeamData = [
 	{
-		title: "G2 Esports",
-		teamImage: G2Img,
+		coachingStaff: {
+			assistantCoaches: null,
+			headCoach: null,
+		},
 		members: [
 			{
 				name: "NiKo",
-				realName: "Kovač, Nikola",
 				nationality: "Bosnia and Herzegovina",
+				realName: "Kovač, Nikola",
 			},
 			{
 				name: "huNter-",
-				realName: "Kovač, Nemanja",
 				nationality: "Bosnia and Herzegovina",
+				realName: "Kovač, Nemanja",
 			},
-			{ name: "m0NESY", realName: "Osipov, Ilya", nationality: "Russia" },
-			{ name: "nexa", realName: "Isaković, Nemanja", nationality: "Serbia" },
-			{ name: "HooXi", realName: "Nielsen, Rasmus", nationality: "Denmark" },
-			{ name: "jks (I)", realName: "Savage, Justin", nationality: "Australia" },
+			{ name: "m0NESY", nationality: "Russia", realName: "Osipov, Ilya" },
+			{ name: "nexa", nationality: "Serbia", realName: "Isaković, Nemanja" },
+			{ name: "HooXi", nationality: "Denmark", realName: "Nielsen, Rasmus" },
+			{ name: "jks (I)", nationality: "Australia", realName: "Savage, Justin" },
 		],
-		coachingStaff: {
-			headCoach: null,
-			assistantCoaches: null,
-		},
+		teamImage: G2Img,
+		title: "G2 Esports",
 	},
 	{
-		title: "Cloud9",
-		teamImage: Cloud9Img,
-		members: [
-			{
-				position: "Top",
-				name: "Fudge",
-				realName: "Allami, Ibrahim",
-				nationality: "Australia",
-			},
-			{
-				position: "Jungle",
-				name: "Blaber",
-				realName: "Huang, Robert",
-				nationality: "United States",
-			},
-			{
-				position: "Mid",
-				name: "Jojopyun",
-				realName: "Pyun, Joseph",
-				nationality: "Canada",
-			},
-			{
-				position: "Bot",
-				name: "Berserker",
-				realName: "Kim Min-cheol",
-				nationality: "South Korea",
-			},
-			{
-				position: "Support",
-				name: "Vulcan",
-				realName: "Laflamme, Philippe",
-				nationality: "Canada",
-			},
-		],
 		coachingStaff: {
-			headCoach: "Alfonso 'Mithy' Aguirre Rodríguez",
 			assistantCoaches: ["Marius 'Veigar v2' Aune"],
+			headCoach: "Alfonso 'Mithy' Aguirre Rodríguez",
 		},
-	},
-	{
-		title: "Astralis",
-		teamImage: AstralisImg,
 		members: [
 			{
-				role: "Top",
+				name: "Fudge",
+				nationality: "Australia",
+				position: "Top",
+				realName: "Allami, Ibrahim",
+			},
+			{
+				name: "Blaber",
+				nationality: "United States",
+				position: "Jungle",
+				realName: "Huang, Robert",
+			},
+			{
+				name: "Jojopyun",
+				nationality: "Canada",
+				position: "Mid",
+				realName: "Pyun, Joseph",
+			},
+			{
+				name: "Berserker",
+				nationality: "South Korea",
+				position: "Bot",
+				realName: "Kim Min-cheol",
+			},
+			{
+				name: "Vulcan",
+				nationality: "Canada",
+				position: "Support",
+				realName: "Laflamme, Philippe",
+			},
+		],
+		teamImage: Cloud9Img,
+		title: "Cloud9",
+	},
+	{
+		coachingStaff: {
+			assistantCoaches: ["Bjørn-Vegar 'Hansen' Hansen"],
+			headCoach: "Baltat 'AoD' Alin-Ciprian",
+		},
+		members: [
+			{
 				handle: "Finn",
 				name: "Wiestål, Finn",
 				nationality: "Sweden",
+				role: "Top",
 			},
 			{
-				role: "Support",
 				handle: "JeongHoon",
 				name: "Lee Jeong-hoon",
 				nationality: "South Korea",
+				role: "Support",
 			},
 			{
-				role: "Mid",
 				handle: "Dajor",
 				name: "Ryppa, Oliver",
 				nationality: "Germany",
+				role: "Mid",
 			},
 			{
-				role: "Jungle",
 				handle: "113",
 				name: "Balcı, Doğukan",
 				nationality: "Turkey",
+				role: "Jungle",
 			},
 			{
-				role: "Bot",
 				handle: "Kobbe",
 				name: "Kobberup, Kasper",
 				nationality: "Denmark",
+				role: "Bot",
 			},
 		],
-		coachingStaff: {
-			headCoach: "Baltat 'AoD' Alin-Ciprian",
-			assistantCoaches: ["Bjørn-Vegar 'Hansen' Hansen"],
-		},
+		teamImage: AstralisImg,
+		title: "Astralis",
 	},
 	{
-		title: "Team Liquid",
-		teamImage: LiquidImg,
+		coachingStaff: {
+			assistantCoaches: null,
+			headCoach: null,
+		},
 		members: [
 			{ handle: "Yeon", name: "Sung, Sean", nationality: "United States" },
 			{ handle: "UmTi", name: "Seong-hyeon, Eom", nationality: "South Korea" },
@@ -127,54 +129,54 @@ export const TeamData = [
 			{ handle: "CoreJJ", name: "Yong-in, Jo", nationality: "South Korea" },
 			{ handle: "APA", name: "Stearns, Eain", nationality: "United States" },
 		],
-		coachingStaff: {
-			headCoach: null,
-			assistantCoaches: null,
-		},
+		teamImage: LiquidImg,
+		title: "Team Liquid",
 	},
 	{
-		title: "FaZe Clan",
+		coachingStaff: {
+			assistantCoaches: null,
+			headCoach: null,
+		},
+		members: [
+			{ handle: "rain", name: "Nygaard, Håvard", nationality: "Norway" },
+			{ handle: "broky", name: "Saukants, Helvijs", nationality: "Latvia" },
+			{ handle: "frozen", name: "Čerňanský, David", nationality: "Slovakia" },
+			{ handle: "karrigan", name: "Andersen, Finn", nationality: "Denmark" },
+			{ handle: "ropz", name: "Kool, Robin", nationality: "Estonia" },
+			{
+				handle: "olofmeister (I)",
+				name: "Kajbjer Gustafsson, Olof",
+				nationality: "Sweden",
+			},
+		],
 		teamImage: FaZeImg,
-		members: [
-			{ handle: "rain", name: "Nygaard, Håvard", nationality: "Norway" },
-			{ handle: "broky", name: "Saukants, Helvijs", nationality: "Latvia" },
-			{ handle: "frozen", name: "Čerňanský, David", nationality: "Slovakia" },
-			{ handle: "karrigan", name: "Andersen, Finn", nationality: "Denmark" },
-			{ handle: "ropz", name: "Kool, Robin", nationality: "Estonia" },
-			{
-				handle: "olofmeister (I)",
-				name: "Kajbjer Gustafsson, Olof",
-				nationality: "Sweden",
-			},
-		],
-		coachingStaff: {
-			headCoach: null,
-			assistantCoaches: null,
-		},
+		title: "FaZe Clan",
 	},
 	{
-		title: "Fnatic",
-		teamImage: FnaticImg,
-		members: [
-			{ handle: "rain", name: "Nygaard, Håvard", nationality: "Norway" },
-			{ handle: "broky", name: "Saukants, Helvijs", nationality: "Latvia" },
-			{ handle: "frozen", name: "Čerňanský, David", nationality: "Slovakia" },
-			{ handle: "karrigan", name: "Andersen, Finn", nationality: "Denmark" },
-			{ handle: "ropz", name: "Kool, Robin", nationality: "Estonia" },
-			{
-				handle: "olofmeister (I)",
-				name: "Kajbjer Gustafsson, Olof",
-				nationality: "Sweden",
-			},
-		],
 		coachingStaff: {
-			headCoach: "Andreas 'Samuelsson' Samuelsson (team director)",
 			assistantCoaches: ["Jamie 'keita' Hall (strategic coach)"],
+			headCoach: "Andreas 'Samuelsson' Samuelsson (team director)",
 		},
+		members: [
+			{ handle: "rain", name: "Nygaard, Håvard", nationality: "Norway" },
+			{ handle: "broky", name: "Saukants, Helvijs", nationality: "Latvia" },
+			{ handle: "frozen", name: "Čerňanský, David", nationality: "Slovakia" },
+			{ handle: "karrigan", name: "Andersen, Finn", nationality: "Denmark" },
+			{ handle: "ropz", name: "Kool, Robin", nationality: "Estonia" },
+			{
+				handle: "olofmeister (I)",
+				name: "Kajbjer Gustafsson, Olof",
+				nationality: "Sweden",
+			},
+		],
+		teamImage: FnaticImg,
+		title: "Fnatic",
 	},
 	{
-		title: "Natus Vincere",
-		teamImage: NatusImg,
+		coachingStaff: {
+			assistantCoaches: null,
+			headCoach: "Andrii 'B1ad3' Gorodenskyi",
+		},
 		members: [
 			{ handle: "w0nderful", name: "Zhdanov, Ihor", nationality: "Ukraine" },
 			{ handle: "b1t", name: "Vakhovskyi, Valerii", nationality: "Ukraine" },
@@ -187,14 +189,14 @@ export const TeamData = [
 				nationality: "Ukraine",
 			},
 		],
-		coachingStaff: {
-			headCoach: "Andrii 'B1ad3' Gorodenskyi",
-			assistantCoaches: null,
-		},
+		teamImage: NatusImg,
+		title: "Natus Vincere",
 	},
 	{
-		title: "FURIA",
-		teamImage: FuriaImg,
+		coachingStaff: {
+			assistantCoaches: null,
+			headCoach: null,
+		},
 		members: [
 			{ handle: "FalleN", name: "Toledo, Gabriel", nationality: "Brazil" },
 			{ handle: "chelo", name: "Cespedes, Marcelo", nationality: "Brazil" },
@@ -202,14 +204,14 @@ export const TeamData = [
 			{ handle: "arT", name: "Piovezan, Andrei", nationality: "Brazil" },
 			{ handle: "KSCERATO", name: "Cerato, Kaike", nationality: "Brazil" },
 		],
-		coachingStaff: {
-			headCoach: null,
-			assistantCoaches: null,
-		},
+		teamImage: FuriaImg,
+		title: "FURIA",
 	},
 	{
-		title: "Evil Geniuses",
-		teamImage: EvilImg,
+		coachingStaff: {
+			assistantCoaches: null,
+			headCoach: "Tommy 'Axed' Ryan",
+		},
 		members: [
 			{
 				handle: "autimatic",
@@ -228,9 +230,7 @@ export const TeamData = [
 			},
 			{ handle: "Walco", name: "Walsh, Colby", nationality: "Canada" },
 		],
-		coachingStaff: {
-			headCoach: "Tommy 'Axed' Ryan",
-			assistantCoaches: null,
-		},
+		teamImage: EvilImg,
+		title: "Evil Geniuses",
 	},
 ];

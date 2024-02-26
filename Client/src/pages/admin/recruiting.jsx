@@ -1,5 +1,5 @@
-import React from "react";
 import Head from "next/head";
+import React from "react";
 // import UsageComp from "@/components/admin/usage";
 
 export default function Recruiting() {
@@ -8,11 +8,11 @@ export default function Recruiting() {
 			<Head>
 				<title>Recruiting E-Sport</title>
 				<meta
-					name="description"
 					content="Recruiting CMRU E-Sport club community"
+					name="description"
 				/>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/logo.ico" />
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<link href="/logo.ico" rel="icon" />
 			</Head>
 			<main className="flex-1 p-5">
 				<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 sm:py-32 lg:px-8">

@@ -1,10 +1,8 @@
-// Components
 import { Avatar, Card } from "@nextui-org/react";
 import Head from "next/head";
-import React from "react";
 import { useSession } from "next-auth/react";
+import React from "react";
 
-// Contents
 export default function Profile() {
 	const { data: session, status } = useSession();
 
@@ -13,11 +11,11 @@ export default function Profile() {
 			<Head>
 				<title>Profile E-Sport</title>
 				<meta
-					name="description"
 					content="See your profile and edit yoru cmru e-sport club community"
+					name="description"
 				/>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/logo.ico" />
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<link href="/logo.ico" rel="icon" />
 			</Head>
 			<div className="mx-auto max-w-5xl p-5 text-left sm:px-6 sm:py-32 lg:px-8">
 				<h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
@@ -31,9 +29,9 @@ export default function Profile() {
 						<div className="mt-5 grid grid-cols-1 gap-4 p-5 sm:grid-cols-1 md:grid-cols-2">
 							<div>
 								<Avatar
-									isBordered
 									as="button"
 									className="w-50 h-50 text-large transition-transform"
+									isBordered
 									name="username"
 									src={session.user.image}
 								/>

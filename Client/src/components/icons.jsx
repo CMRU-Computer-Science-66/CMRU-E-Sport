@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const Logo = ({ size = 36, width, height, ...props }) => (
+export const Logo = ({ height, size = 36, width, ...props }) => (
 	<svg
 		fill="none"
 		height={size || height}
@@ -17,7 +17,7 @@ export const Logo = ({ size = 36, width, height, ...props }) => (
 	</svg>
 );
 
-export const DiscordIcon = ({ size = 24, width, height, ...props }) => {
+export const DiscordIcon = ({ height, size = 24, width, ...props }) => {
 	return (
 		<svg
 			height={size || height}
@@ -33,7 +33,7 @@ export const DiscordIcon = ({ size = 24, width, height, ...props }) => {
 	);
 };
 
-export const TwitterIcon = ({ size = 24, width, height, ...props }) => {
+export const TwitterIcon = ({ height, size = 24, width, ...props }) => {
 	return (
 		<svg
 			height={size || height}
@@ -49,7 +49,7 @@ export const TwitterIcon = ({ size = 24, width, height, ...props }) => {
 	);
 };
 
-export const GithubIcon = ({ size = 24, width, height, ...props }) => {
+export const GithubIcon = ({ height, size = 24, width, ...props }) => {
 	return (
 		<svg
 			height={size || height}
@@ -67,7 +67,7 @@ export const GithubIcon = ({ size = 24, width, height, ...props }) => {
 	);
 };
 
-export const MoonFilledIcon = ({ size = 24, width, height, ...props }) => (
+export const MoonFilledIcon = ({ height, size = 24, width, ...props }) => (
 	<svg
 		aria-hidden="true"
 		focusable="false"
@@ -84,7 +84,7 @@ export const MoonFilledIcon = ({ size = 24, width, height, ...props }) => (
 	</svg>
 );
 
-export const SunFilledIcon = ({ size = 24, width, height, ...props }) => (
+export const SunFilledIcon = ({ height, size = 24, width, ...props }) => (
 	<svg
 		aria-hidden="true"
 		focusable="false"
@@ -101,7 +101,7 @@ export const SunFilledIcon = ({ size = 24, width, height, ...props }) => (
 	</svg>
 );
 
-export const HeartFilledIcon = ({ size = 24, width, height, ...props }) => (
+export const HeartFilledIcon = ({ height, size = 24, width, ...props }) => (
 	<svg
 		aria-hidden="true"
 		focusable="false"
@@ -150,7 +150,7 @@ export const SearchIcon = (props) => (
 );
 
 export const NextUILogo = (props) => {
-	const { width, height = 40 } = props;
+	const { height = 40, width } = props;
 
 	return (
 		<svg

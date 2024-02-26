@@ -1,24 +1,19 @@
-// Components
 import Head from "next/head";
 import React from "react";
 
-// Contents
 export default function Tournaments() {
 	return (
 		<div>
 			<Head>
-				<title>TournaMemts E-Sport</title>
-				<meta name="description" content="Tournaments of cmru e-sport" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/logo.ico" />
+				<title>Tournaments E-Sport</title>
+				<meta content="Tournaments of cmru e-sport" name="description" />
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 sm:py-32 lg:px-8">
-				<h2 className="text-3xl font-bold tracking-tight sm:text-4xl ">
-					Tournaments
-				</h2>
-				<h4 className="mb-8 text-xl tracking-tight text-gray-600">
+			<div className="mx-auto max-w-7xl p-5 text-center md:py-10 lg:px-8">
+				<h2 className="tracking-tig ht text-3xl  font-bold sm:text-4xl ">
 					รายการแข่งขัน
-				</h4>
+				</h2>
 				<br />
 				<br />
 				<br />

@@ -1,98 +1,98 @@
-import G2Img from "@/assets/team/g2esport.png";
-import Cloud9Img from "@/assets/team/cloud9.png";
+import NatusImg from "@/assets/team/NatusVincere.png";
 import AstralisImg from "@/assets/team/astralis.png";
-import LiquidImg from "@/assets/team/teamliquid.png";
+import Cloud9Img from "@/assets/team/cloud9.png";
+import EvilImg from "@/assets/team/evil.png";
 import FaZeImg from "@/assets/team/faze.png";
 import FnaticImg from "@/assets/team/fnatic.png";
-import NatusImg from "@/assets/team/NatusVincere.png";
 import FuriaImg from "@/assets/team/furiaesport.png";
-import EvilImg from "@/assets/team/evil.png";
+import G2Img from "@/assets/team/g2esport.png";
+import LiquidImg from "@/assets/team/teamliquid.png";
 
 export const ScoreListData = [
 	{
-		tournament: "CMRU Pro League",
 		teams: [
 			{
+				draws: 1,
+				losses: 2,
+				matchesPlayed: 15,
 				name: "G2 Esports",
 				teamImage: G2Img,
-				matchesPlayed: 15,
-				wins: 11,
-				losses: 2,
-				draws: 1,
 				totalPoints: 41,
+				wins: 11,
 			},
 			{
+				draws: 1,
+				losses: 2,
+				matchesPlayed: 15,
 				name: "Cloud9",
 				teamImage: Cloud9Img,
-				matchesPlayed: 15,
-				wins: 2,
-				losses: 2,
-				draws: 1,
 				totalPoints: 7,
+				wins: 2,
 			},
 			{
+				draws: 1,
+				losses: 3,
+				matchesPlayed: 15,
 				name: "Astralis",
 				teamImage: AstralisImg,
-				matchesPlayed: 15,
-				wins: 1,
-				losses: 3,
-				draws: 1,
 				totalPoints: 4,
+				wins: 1,
 			},
 			{
+				draws: 1,
+				losses: 1,
+				matchesPlayed: 15,
 				name: "Team Liquid",
 				teamImage: LiquidImg,
-				matchesPlayed: 15,
-				wins: 3,
-				losses: 1,
-				draws: 1,
 				totalPoints: 10,
+				wins: 3,
 			},
 			{
+				draws: 7,
+				losses: 7,
+				matchesPlayed: 15,
 				name: "Fnatic",
 				teamImage: FnaticImg,
-				matchesPlayed: 15,
-				wins: 1,
-				losses: 7,
-				draws: 7,
 				totalPoints: 10,
+				wins: 1,
 			},
 			{
+				draws: 5,
+				losses: 5,
+				matchesPlayed: 15,
 				name: "FaZe Clan",
 				teamImage: FaZeImg,
-				matchesPlayed: 15,
-				wins: 5,
-				losses: 5,
-				draws: 5,
 				totalPoints: 20,
+				wins: 5,
 			},
 			{
+				draws: 4,
+				losses: 3,
+				matchesPlayed: 15,
 				name: "Natus Vincere",
 				teamImage: NatusImg,
-				matchesPlayed: 15,
-				wins: 8,
-				losses: 3,
-				draws: 4,
 				totalPoints: 28,
+				wins: 8,
 			},
 			{
+				draws: 3,
+				losses: 2,
+				matchesPlayed: 15,
 				name: "FURIA",
 				teamImage: FuriaImg,
-				matchesPlayed: 15,
-				wins: 10,
-				losses: 2,
-				draws: 3,
 				totalPoints: 33,
+				wins: 10,
 			},
 			{
+				draws: 3,
+				losses: 6,
+				matchesPlayed: 15,
 				name: "Evil Geniuses",
 				teamImage: EvilImg,
-				matchesPlayed: 15,
-				wins: 6,
-				losses: 6,
-				draws: 3,
 				totalPoints: 21,
+				wins: 6,
 			},
 		],
+		tournament: "CMRU Pro League",
 	},
 ];

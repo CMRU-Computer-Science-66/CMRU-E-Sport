@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "@cmru-e-sport/client",
-	"version": "1.0.7",
+	"version": "1.2.0",
 	"scripts": {
 		"build": "next build",
 		"clean": "del-cli .next",
@@ -39,7 +39,9 @@
 		"@types/react-dom": "18.2.19",
 		"autoprefixer": "10.4.17",
 		"eslint-config-next": "14.1.0",
+		"eslint-plugin-perfectionist": "2.5.0",
 		"eslint-plugin-react": "7.33.2",
+		"eslint-plugin-tailwindcss": "3.14.3",
 		"postcss": "8.4.35",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
@@ -48,25 +50,62 @@
 	"eslintConfig": {
 		"root": true,
 		"extends": [
-			"eslint:recommended",
-			"prettier",
-			"next"
-		],
-		"plugins": [
+			"next/core-web-vitals",
+			"plugin:@next/next/recommended",
+			"plugin:react/recommended",
+			"plugin:tailwindcss/recommended",
 			"prettier"
 		],
-		"parserOptions": {
-			"ecmaFeatures": {
-				"jsx": true
+		"overrides": [
+			{
+				"files": [
+					"*.js",
+					"*.jsx"
+				],
+				"parser": "@typescript-eslint/parser"
+			},
+			{
+				"files": [
+					"./src/**/**"
+				],
+				"plugins": [
+					"perfectionist"
+				],
+				"extends": [
+					"plugin:perfectionist/recommended-natural"
+				],
+				"rules": {
+					"perfectionist/sort-named-imports": "warn",
+					"perfectionist/sort-imports": "warn",
+					"perfectionist/sort-objects": "warn"
+				}
 			}
-		},
+		],
+		"plugins": [
+			"react",
+			"tailwindcss",
+			"prettier"
+		],
+		"ignorePatterns": [
+			"node_modules",
+			"src/pages/api"
+		],
 		"env": {
 			"browser": true,
 			"node": true,
 			"es6": true
 		},
+		"parserOptions": {
+			"ecmaFeatures": {
+				"jsx": true
+			}
+		},
 		"rules": {
-			"no-unused-vars": "warn"
+			"tailwindcss/no-custom-classname": "off",
+			"react/react-in-jsx-scope": "off",
+			"react/prop-types": "off",
+			"no-unused-vars": "warn",
+			"no-undef": "off"
 		}
 	},
 	"prettier": {

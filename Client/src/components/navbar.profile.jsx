@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+import { Link } from "@nextui-org/link";
 import {
 	Avatar,
-	DropdownTrigger,
-	Dropdown,
-	DropdownMenu,
-	DropdownItem,
 	Button,
+	Dropdown,
+	DropdownItem,
+	DropdownMenu,
+	DropdownTrigger,
 } from "@nextui-org/react";
-import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
-import { Link } from "@nextui-org/link";
+import { signOut, useSession } from "next-auth/react";
+import React, { useEffect, useState } from "react";
+
 import SkeletonComponent from "./skeleton";
 
 export const NavbarProfile = () => {
@@ -42,8 +43,8 @@ export const NavbarProfile = () => {
 	if (!session?.user) {
 		return (
 			<Button
-				disabled={isLogin}
 				color="primary"
+				disabled={isLogin}
 				onClick={() => openURL("/account/login")}
 			>
 				เข้าสู่ระบบ
@@ -57,10 +58,10 @@ export const NavbarProfile = () => {
 						<SkeletonComponent />
 					) : (
 						<Avatar
-							isBordered
 							as="button"
 							className="transition-transform"
 							color="default"
+							isBordered
 							name={session.user?.name}
 							size="sm"
 							src={session.user?.image}
@@ -69,13 +70,13 @@ export const NavbarProfile = () => {
 				</DropdownTrigger>
 				<DropdownMenu
 					aria-label="Profile Actions"
-					variant="flat"
 					onAction={(key) => Actions(key)}
+					variant="flat"
 				>
 					<DropdownItem
-						key="profile"
 						className="h-14 gap-2"
 						href="/contents/profile"
+						key="profile"
 					>
 						<p className="font-semibold">ลงชื่อเข้าใช้เป็น</p>
 						<p className="font-semibold">
@@ -91,7 +92,7 @@ export const NavbarProfile = () => {
 					) : null}
 					<DropdownItem key="payment">จ่ายเงิน</DropdownItem>
 					<DropdownItem href="/contents/manageteam">จัดการทีม</DropdownItem>
-					<DropdownItem key="logout" color="danger" className="text-danger">
+					<DropdownItem className="text-danger" color="danger" key="logout">
 						ออกจากระบบ
 					</DropdownItem>
 				</DropdownMenu>

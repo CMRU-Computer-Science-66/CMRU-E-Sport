@@ -1,5 +1,5 @@
-import React from "react";
 import Head from "next/head";
+import React from "react";
 
 export default function DashboardPage() {
 	return (
@@ -7,11 +7,11 @@ export default function DashboardPage() {
 			<Head>
 				<title>ScoreBoard E-Sport</title>
 				<meta
-					name="description"
 					content="Overview of admin form CMRU E-Sport club"
+					name="description"
 				/>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/logo.ico" />
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<link href="/logo.ico" rel="icon" />
 			</Head>
 			<main className="flex-1 p-5">
 				<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 sm:py-32 lg:px-8">

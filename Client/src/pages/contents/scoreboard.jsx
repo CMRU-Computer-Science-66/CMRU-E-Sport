@@ -1,16 +1,15 @@
-// Components
-import React from "react";
-import Head from "next/head";
+import { ScoreListData } from "@/data/score";
 import {
 	Table,
-	TableHeader,
 	TableBody,
-	TableRow,
 	TableCell,
 	TableColumn,
+	TableHeader,
+	TableRow,
 } from "@nextui-org/react";
+import Head from "next/head";
 import Image from "next/image";
-import { ScoreListData } from "@/data/score";
+import React from "react";
 
 export default function Scoreboard() {
 	const sortedTeams = ScoreListData[0].teams.sort(
@@ -24,9 +23,9 @@ export default function Scoreboard() {
 			render: (team) => (
 				<div className="flex items-center">
 					<Image
-						src={team.teamImage}
 						alt={team.name}
-						className="mr-2 h-8 w-8 rounded-full"
+						className="mr-2 size-8 rounded-full"
+						src={team.teamImage}
 					/>
 
 					<span>{team.name}</span>
@@ -59,29 +58,28 @@ export default function Scoreboard() {
 		<div>
 			<Head>
 				<title>ScoreBoard E-Sport</title>
-				<meta name="description" content="Cmru E-Sport Scoreboard" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/logo.ico" />
+				<meta content="Cmru E-Sport Scoreboard" name="description" />
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 sm:py-32 lg:px-8">
+			<div className="mx-auto max-w-7xl p-5 text-center md:py-10 lg:px-8">
 				<h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-					Score Board
+					ตารางคะแนน
 				</h2>
-				<h4 className="mt-2 text-xl text-gray-600">ตารางคะแนน</h4>
 				<div className="mt-10 text-left">
 					<Table aria-label="Example table with dynamic content">
 						<TableHeader columns={columns}>
 							{(column) => (
-								<TableColumn key={column.key} className="border-gray-300">
+								<TableColumn className="border-gray-300" key={column.key}>
 									{column.label}
 								</TableColumn>
 							)}
 						</TableHeader>
 						<TableBody items={sortedTeams}>
 							{(team) => (
-								<TableRow key={team.name} className="border-gray-300">
+								<TableRow className="border-gray-300" key={team.name}>
 									{columns.map((column) => (
-										<TableCell key={column.key} className="border-gray-300">
+										<TableCell className="border-gray-300" key={column.key}>
 											{column.render ? column.render(team) : team[column.key]}
 										</TableCell>
 									))}
