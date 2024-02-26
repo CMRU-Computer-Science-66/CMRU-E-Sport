@@ -110,7 +110,7 @@ export default function Home() {
 										src={item.img}
 										width="100%"
 									/>
-									<h1 className="text-medium text-center font-semibold">
+									<h1 className="text-center text-medium font-semibold">
 										{item.title}
 									</h1>
 									<p>{item.contents}</p>
