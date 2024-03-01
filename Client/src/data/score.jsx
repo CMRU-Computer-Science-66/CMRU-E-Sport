@@ -1,12 +1,14 @@
-import NatusImg from "@/assets/team/NatusVincere.png";
-import AstralisImg from "@/assets/team/astralis.png";
-import Cloud9Img from "@/assets/team/cloud9.png";
-import EvilImg from "@/assets/team/evil.png";
-import FaZeImg from "@/assets/team/faze.png";
-import FnaticImg from "@/assets/team/fnatic.png";
-import FuriaImg from "@/assets/team/furiaesport.png";
-import G2Img from "@/assets/team/g2esport.png";
-import LiquidImg from "@/assets/team/teamliquid.png";
+// Team Image
+import NatusImg from "@/assets/team/natusvincere/NatusVincere.png";
+import AstralisImg from "@/assets/team/astarlis/astralis.png";
+import Cloud9Img from "@/assets/team/clound9/cloud9.png";
+import EvilImg from "@/assets/team/evil/evil.png";
+import FaZeImg from "@/assets/team/faze/faze.png";
+import FnaticImg from "@/assets/team/fnatic/fnatic.png";
+import FuriaImg from "@/assets/team/furiaesport/furiaesport.png";
+import G2Img from "@/assets/team/g2esport/g2esport.png";
+import LiquidImg from "@/assets/team/teamliquid/teamliquid.png";
+
 
 export const ScoreListData = [
 	{

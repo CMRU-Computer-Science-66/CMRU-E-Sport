@@ -40,12 +40,6 @@ export default function TeamPage() {
 								<h2 className="mt-2 text-2xl font-bold">Team Details</h2>
 								<p className="mt-3">{team.contents}</p>
 								<p className="mt-3">{team.under}</p>
-								<h2 className="mt-8 text-2xl font-bold">Team Members</h2>
-								<ul className="mt-3 list-disc pl-5">
-									{team.members.map((member, index) => (
-										<li key={index}>{member.name}</li>
-									))}
-								</ul>
 								<div className="mt-8">
 									<h3 className="text-xl font-bold">Coaching Staff</h3>
 									<p className="mt-2">
@@ -58,6 +52,31 @@ export default function TeamPage() {
 									</p>
 								</div>
 							</div>
+						</div>
+
+						<h2 className="mt-8 text-left text-2xl font-bold">Player</h2>
+						<div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+							{team.members.map((member, index) => (
+								<Card
+									key={index}
+									className="group relative items-center justify-center overflow-hidden p-5 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+								>
+									<div className="aspect-w-3 aspect-h-2">
+										<Image
+											className="object-cover"
+											height={250}
+											alt={`${member.name}'s Photo`}
+											src={member.playerimg}
+											width={200}
+										/>
+									</div>
+									<div className="p-4">
+										<h3 className="mb-2 text-lg font-bold">{member.name}</h3>
+										<p className="text-gray-600">Nationality: {member.nationality}</p>
+										<p className="text-gray-600">Real Name: {member.realName}</p>
+									</div>
+								</Card>
+							))}
 						</div>
 					</div>
 				) : (

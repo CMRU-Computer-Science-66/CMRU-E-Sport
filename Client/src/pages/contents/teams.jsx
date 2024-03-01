@@ -22,7 +22,7 @@ export default function Team() {
 				<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 					{TeamData.map((item, index) => (
 						<Link href={`/teams/${encodeURIComponent(item.title)}`} key={index}>
-							<Card className="group relative items-center justify-center overflow-hidden bg-transparent p-5 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+							<Card className="group relative items-center justify-center overflow-hidden p-5 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
 								<div className="aspect-w-3 aspect-h-2">
 									<Image
 										alt={item.title}
