@@ -1,5 +1,4 @@
 // Team Image
-import NatusImg from "@/assets/team/natusvincere/NatusVincere.png";
 import AstralisImg from "@/assets/team/astarlis/astralis.png";
 import Cloud9Img from "@/assets/team/clound9/cloud9.png";
 import EvilImg from "@/assets/team/evil/evil.png";
@@ -7,16 +6,15 @@ import FaZeImg from "@/assets/team/faze/faze.png";
 import FnaticImg from "@/assets/team/fnatic/fnatic.png";
 import FuriaImg from "@/assets/team/furiaesport/furiaesport.png";
 import G2Img from "@/assets/team/g2esport/g2esport.png";
-import LiquidImg from "@/assets/team/teamliquid/teamliquid.png";
-
 // Player Image
+import HooxiImg from "@/assets/team/g2esport/player/Hooxi.png";
+import HunterImg from "@/assets/team/g2esport/player/Hunter.png";
+import MonesyImg from "@/assets/team/g2esport/player/Monesy.png";
+import NexaImg from "@/assets/team/g2esport/player/Nexa.png";
 // G2 Esport
-import NikoImg from "@/assets/team/g2esport/player/Niko.png"
-import MonesyImg from "@/assets/team/g2esport/player/Monesy.png"
-import HunterImg from "@/assets/team/g2esport/player/Hunter.png"
-import HooxiImg from "@/assets/team/g2esport/player/Hooxi.png"
-import NexaImg from "@/assets/team/g2esport/player/Nexa.png"
-
+import NikoImg from "@/assets/team/g2esport/player/Niko.png";
+import NatusImg from "@/assets/team/natusvincere/NatusVincere.png";
+import LiquidImg from "@/assets/team/teamliquid/teamliquid.png";
 
 export const TeamData = [
 	{
@@ -28,32 +26,32 @@ export const TeamData = [
 			{
 				name: "NiKo",
 				nationality: "Bosnia and Herzegovina",
-				realName: "Kovač, Nikola",
 				playerimg: NikoImg,
+				realName: "Kovač, Nikola",
 			},
 			{
 				name: "huNter-",
 				nationality: "Bosnia and Herzegovina",
-				realName: "Kovač, Nemanja",
 				playerimg: HunterImg,
+				realName: "Kovač, Nemanja",
 			},
 			{
 				name: "m0NESY",
 				nationality: "Russia",
-				realName: "Osipov, Ilya",
 				playerimg: MonesyImg,
+				realName: "Osipov, Ilya",
 			},
 			{
 				name: "nexa",
 				nationality: "Serbia",
-				realName: "Isaković, Nemanja",
 				playerimg: NexaImg,
+				realName: "Isaković, Nemanja",
 			},
 			{
 				name: "HooXi",
 				nationality: "Denmark",
-				realName: "Nielsen, Rasmus",
 				playerimg: HooxiImg,
+				realName: "Nielsen, Rasmus",
 			},
 		],
 		teamImage: G2Img,
@@ -68,37 +66,37 @@ export const TeamData = [
 			{
 				name: "Fudge",
 				nationality: "Australia",
+				playerimg: MonesyImg,
 				position: "Top",
 				realName: "Allami, Ibrahim",
-				playerimg: MonesyImg,
 			},
 			{
 				name: "Blaber",
 				nationality: "United States",
+				playerimg: MonesyImg,
 				position: "Jungle",
 				realName: "Huang, Robert",
-				playerimg: MonesyImg,
 			},
 			{
 				name: "Jojopyun",
 				nationality: "Canada",
+				playerimg: MonesyImg,
 				position: "Mid",
 				realName: "Pyun, Joseph",
-				playerimg: MonesyImg,
 			},
 			{
 				name: "Berserker",
 				nationality: "South Korea",
+				playerimg: MonesyImg,
 				position: "Bot",
 				realName: "Kim Min-cheol",
-				playerimg: MonesyImg,
 			},
 			{
 				name: "Vulcan",
 				nationality: "Canada",
+				playerimg: MonesyImg,
 				position: "Support",
 				realName: "Laflamme, Philippe",
-				playerimg: MonesyImg,
 			},
 		],
 		teamImage: Cloud9Img,
@@ -114,36 +112,36 @@ export const TeamData = [
 				handle: "Finn",
 				name: "Wiestål, Finn",
 				nationality: "Sweden",
-				role: "Top",
 				playerimg: MonesyImg,
+				role: "Top",
 			},
 			{
 				handle: "JeongHoon",
 				name: "Lee Jeong-hoon",
 				nationality: "South Korea",
-				role: "Support",
 				playerimg: MonesyImg,
+				role: "Support",
 			},
 			{
 				handle: "Dajor",
 				name: "Ryppa, Oliver",
 				nationality: "Germany",
-				role: "Mid",
 				playerimg: MonesyImg,
+				role: "Mid",
 			},
 			{
 				handle: "113",
 				name: "Balcı, Doğukan",
 				nationality: "Turkey",
-				role: "Jungle",
 				playerimg: MonesyImg,
+				role: "Jungle",
 			},
 			{
 				handle: "Kobbe",
 				name: "Kobberup, Kasper",
 				nationality: "Denmark",
-				role: "Bot",
 				playerimg: MonesyImg,
+				role: "Bot",
 			},
 		],
 		teamImage: AstralisImg,

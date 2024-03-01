@@ -58,22 +58,26 @@ export default function TeamPage() {
 						<div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 							{team.members.map((member, index) => (
 								<Card
-									key={index}
 									className="group relative items-center justify-center overflow-hidden p-5 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+									key={index}
 								>
 									<div className="aspect-w-3 aspect-h-2">
 										<Image
+											alt={`${member.name}'s Photo`}
 											className="object-cover"
 											height={250}
-											alt={`${member.name}'s Photo`}
 											src={member.playerimg}
 											width={200}
 										/>
 									</div>
 									<div className="p-4">
 										<h3 className="mb-2 text-lg font-bold">{member.name}</h3>
-										<p className="text-gray-600">Nationality: {member.nationality}</p>
-										<p className="text-gray-600">Real Name: {member.realName}</p>
+										<p className="text-gray-600">
+											Nationality: {member.nationality}
+										</p>
+										<p className="text-gray-600">
+											Real Name: {member.realName}
+										</p>
 									</div>
 								</Card>
 							))}
