@@ -1,5 +1,5 @@
 import piroonImg from "@/assets/staff/personal_201021140702.jpg";
-import prathanImg from "@/assets/staff/pratha-e1671516670199.jpg"
+import prathanImg from "@/assets/staff/pratha-e1671516670199.jpg";
 
 export const lecturerData = [
 	{
@@ -18,7 +18,6 @@ export const lecturerData = [
 		staffrole: "อาจารย์ที่ปรึกษาชมรม",
 		title: "อาจารย์ประธาน คำจินะ",
 	},
-
 ];
 
 export const StaffData = [
