@@ -1,16 +1,27 @@
 import piroonImg from "@/assets/staff/personal_201021140702.jpg";
+import prathanImg from "@/assets/staff/pratha-e1671516670199.jpg"
 
-export const StaffData = [
+export const lecturerData = [
 	{
 		facebook: "",
 		faculty: "",
 		img: piroonImg,
 		instagram: "",
-		major: "",
 		staffrole: "ผู้ก่อตั้งชมรม",
 		title: "อาจารย์ ดร.พิรุฬห์ แก้วฟุ้งรังษี",
 	},
+	{
+		facebook: "",
+		faculty: "",
+		img: prathanImg,
+		instagram: "",
+		staffrole: "อาจารย์ที่ปรึกษาชมรม",
+		title: "อาจารย์ประธาน คำจินะ",
+	},
 
+];
+
+export const StaffData = [
 	{
 		facebook: "",
 		faculty: "วิทยาศาสตร์ และ เทคโนโลยี",

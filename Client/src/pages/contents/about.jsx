@@ -1,4 +1,4 @@
-import { DevData, Staff2Data, StaffData } from "@/data/staff";
+import { DevData, Staff2Data, StaffData, lecturerData } from "@/data/staff";
 import { Card } from "@nextui-org/react";
 import Head from "next/head";
 import Image from "next/image";
@@ -78,31 +78,9 @@ export default function Staff() {
 					<h2 className="mt-5 text-center text-xl font-bold tracking-tight sm:text-4xl">
 						อาจารย์ที่ปรึกษาชมรม
 					</h2>
-					<div className="mx-auto mt-8 grid gap-6 md:grid-cols-1">
-						<div className="p-4 text-center" key={0}>
-							<div className="flex flex-col items-center">
-								<Image
-									alt={StaffData[0].title}
-									className="rounded-lg"
-									height={100}
-									src={StaffData[0].img}
-									width={250}
-								/>
-								<h4 className="mt-4 text-lg font-semibold">
-									{StaffData[0].title}
-								</h4>
-								<h4 className="text-sm text-gray-500">
-									{StaffData[0].staffrole}
-								</h4>
-							</div>
-						</div>
-					</div>
 
-					<h2 className="mt-5 text-left text-3xl font-bold tracking-tight sm:text-4xl">
-						กรรมการบริหารชมรม
-					</h2>
-					<div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-						{StaffData.slice(1).map((item, index) => (
+					<div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+						{lecturerData.map((item, index) => (
 							<Link
 								href={`/staffs/${encodeURIComponent(item.title)}`}
 								key={index}
@@ -126,12 +104,11 @@ export default function Staff() {
 						))}
 					</div>
 
-					<h2 className="mt-10 text-left text-3xl font-bold tracking-tight sm:text-4xl">
-						ทีมงาน
+					<h2 className="mt-5 text-left text-3xl font-bold tracking-tight sm:text-4xl">
+						กรรมการบริหารชมรม
 					</h2>
-
 					<div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-						{Staff2Data.map((item, index) => (
+						{StaffData.map((item, index) => (
 							<Link
 								href={`/staffs/${encodeURIComponent(item.title)}`}
 								key={index}
