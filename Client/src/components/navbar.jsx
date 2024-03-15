@@ -29,7 +29,8 @@ export const Navbar = () => {
 						<p className="font-bold text-inherit">CMRU E Sport</p>
 					</NextLink>
 				</NavbarBrand>
-				<ul className="ml-2 hidden justify-start gap-4 lg:flex">
+
+				<NavbarContent className="ml-2 hidden justify-start gap-4 sm:flex">
 					{siteConfig.navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
@@ -44,7 +45,7 @@ export const Navbar = () => {
 							</NextLink>
 						</NavbarItem>
 					))}
-				</ul>
+				</NavbarContent>
 			</NavbarContent>
 
 			<NavbarContent

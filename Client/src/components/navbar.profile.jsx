@@ -75,7 +75,6 @@ export const NavbarProfile = () => {
 				>
 					<DropdownItem
 						className="h-14 gap-2"
-						href="/contents/profile"
 						key="profile"
 					>
 						<p className="font-semibold">ลงชื่อเข้าใช้เป็น</p>
@@ -84,14 +83,14 @@ export const NavbarProfile = () => {
 						</p>
 					</DropdownItem>
 					{session &&
-					(session.user.role === "admin" ||
-						session.user.role === "developer") ? (
+						(session.user.role === "admin" ||
+							session.user.role === "developer") ? (
 						<DropdownItem>
 							<Link href="/admin/dashboard">เมนูแอดมิน</Link>
 						</DropdownItem>
 					) : null}
-					<DropdownItem key="payment">จ่ายเงิน</DropdownItem>
-					<DropdownItem href="/contents/manageteam">จัดการทีม</DropdownItem>
+					<DropdownItem href="/contents/profile">โปรไฟล์</DropdownItem>
+					<DropdownItem href="/contents/seting">ตั้งค่า</DropdownItem>
 					<DropdownItem className="text-danger" color="danger" key="logout">
 						ออกจากระบบ
 					</DropdownItem>

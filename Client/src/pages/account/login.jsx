@@ -1,7 +1,7 @@
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Input } from "@nextui-org/react";
+import { Button, Input, Image } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 import { signIn as NextAuthSignIn } from "next-auth/react";
 import React, { useState } from "react";
@@ -85,7 +85,7 @@ export default function Login() {
 							>
 								Google
 							</Button>
-							<span style={{ width: "1rem" }}></span> {}
+							<span style={{ width: "1rem" }}></span> { }
 							<Button
 								className="w-full rounded-md bg-[#424549] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm"
 								onClick={() => signIn("discord")}

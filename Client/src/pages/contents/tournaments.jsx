@@ -1,6 +1,6 @@
-import NavTorunaments from "@/components/navtour";
 import Head from "next/head";
 import React from "react";
+import Usage from "@/components/usage";
 
 export default function Tournaments() {
 	return (
@@ -15,7 +15,7 @@ export default function Tournaments() {
 				<h2 className="tracking-tig ht py-5  text-3xl font-bold sm:text-4xl">
 					รายการแข่งขัน
 				</h2>
-				<NavTorunaments />
+				<Usage />
 				<br />
 				<br />
 				<br />
