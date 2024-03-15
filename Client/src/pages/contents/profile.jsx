@@ -26,7 +26,7 @@ export default function Profile() {
 				</h4>
 				{session ? (
 					<div>
-						<Card className="p-4 text-center mt-8">
+						<Card className="mt-8 p-4 text-center">
 							<div className="mt-5 grid grid-cols-1 gap-4 p-5 sm:grid-cols-1 md:grid-cols-2">
 								<div>
 									<Avatar
@@ -46,34 +46,34 @@ export default function Profile() {
 									</h4>
 								</div>
 							</div>
-							<h2 className="text-left text-2xl font-bold tracking-tight sm:text-1xl">
+							<h2 className="sm:text-1xl text-left text-2xl font-bold tracking-tight">
 								อีเมล
 							</h2>
-							<h4 className="text-left mb-8 text-xl tracking-tight text-gray-600">
+							<h4 className="mb-8 text-left text-xl tracking-tight text-gray-600">
 								{session.user.email}
 							</h4>
-							<h2 className="text-left text-2xl font-bold tracking-tight sm:text-1xl">
+							<h2 className="sm:text-1xl text-left text-2xl font-bold tracking-tight">
 								Bio
 							</h2>
-							<h4 className="text-left mb-8 text-xl tracking-tight text-gray-600">
+							<h4 className="mb-8 text-left text-xl tracking-tight text-gray-600">
 								Bio
 							</h4>
-							<h2 className="text-left text-2xl font-bold tracking-tight sm:text-1xl">
+							<h2 className="sm:text-1xl text-left text-2xl font-bold tracking-tight">
 								คณะ
 							</h2>
-							<h4 className="text-left mb-8 text-xl tracking-tight text-gray-600">
+							<h4 className="mb-8 text-left text-xl tracking-tight text-gray-600">
 								คณะ
 							</h4>
-							<h2 className="text-left text-2xl font-bold tracking-tight sm:text-1xl">
+							<h2 className="sm:text-1xl text-left text-2xl font-bold tracking-tight">
 								สาขา
 							</h2>
-							<h4 className="text-left mb-8 text-xl tracking-tight text-gray-600">
+							<h4 className="mb-8 text-left text-xl tracking-tight text-gray-600">
 								สาขา
 							</h4>
-							<h2 className="text-left text-2xl font-bold tracking-tight sm:text-1xl">
+							<h2 className="sm:text-1xl text-left text-2xl font-bold tracking-tight">
 								ทีมของฉัน
 							</h2>
-							<h4 className="text-left mb-8 text-xl tracking-tight text-gray-600">
+							<h4 className="mb-8 text-left text-xl tracking-tight text-gray-600">
 								-
 							</h4>
 						</Card>

@@ -73,18 +73,15 @@ export const NavbarProfile = () => {
 					onAction={(key) => Actions(key)}
 					variant="flat"
 				>
-					<DropdownItem
-						className="h-14 gap-2"
-						key="profile"
-					>
+					<DropdownItem className="h-14 gap-2" key="profile">
 						<p className="font-semibold">ลงชื่อเข้าใช้เป็น</p>
 						<p className="font-semibold">
 							{session.user?.email || session?.user?.name}
 						</p>
 					</DropdownItem>
 					{session &&
-						(session.user.role === "admin" ||
-							session.user.role === "developer") ? (
+					(session.user.role === "admin" ||
+						session.user.role === "developer") ? (
 						<DropdownItem>
 							<Link href="/admin/dashboard">เมนูแอดมิน</Link>
 						</DropdownItem>

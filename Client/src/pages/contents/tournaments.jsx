@@ -1,6 +1,6 @@
+import Usage from "@/components/usage";
 import Head from "next/head";
 import React from "react";
-import Usage from "@/components/usage";
 
 export default function Tournaments() {
 	return (
