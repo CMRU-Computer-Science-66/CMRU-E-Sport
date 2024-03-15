@@ -15,7 +15,7 @@ export default function Staff() {
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<div className="md:py-10lg:px-8 mx-auto max-w-7xl p-5 text-center">
+			<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 lg:px-8">
 				<h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
 					รายชื่อทีมงาน
 				</h2>

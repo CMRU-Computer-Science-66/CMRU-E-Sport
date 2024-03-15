@@ -1,7 +1,7 @@
 // Components
 // Data
 import { TeamData } from "@/data/team";
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+import { Card, CardBody, } from "@nextui-org/react";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -20,7 +20,7 @@ export default function TeamPage() {
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 sm:py-32 lg:px-8">
+			<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 lg:px-8">
 				{team ? (
 					<div>
 						<h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -70,15 +70,17 @@ export default function TeamPage() {
 											width={200}
 										/>
 									</div>
-									<div className="p-4">
-										<h3 className="mb-2 text-lg font-bold">{member.name}</h3>
-										<p className="text-gray-600">
-											Nationality: {member.nationality}
-										</p>
-										<p className="text-gray-600">
-											Real Name: {member.realName}
-										</p>
-									</div>
+									<CardBody>
+										<div className="text-center">
+											<h3 className="mb-2 text-lg font-bold">{member.name}</h3>
+											<p className="text-gray-600">
+												Nationality: {member.nationality}
+											</p>
+											<p className="text-gray-600">
+												Real Name: {member.realName}
+											</p>
+										</div>
+									</CardBody>
 								</Card>
 							))}
 						</div>

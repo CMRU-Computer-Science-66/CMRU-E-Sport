@@ -17,7 +17,7 @@ export default function Profile() {
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<div className="mx-auto max-w-5xl p-5 text-left sm:px-6 sm:py-32 lg:px-8">
+			<div className="mx-auto max-w-5xl p-5 text-left sm:px-6 lg:px-8">
 				<h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
 					Profile
 				</h2>

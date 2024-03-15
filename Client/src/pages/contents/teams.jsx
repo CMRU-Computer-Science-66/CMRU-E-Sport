@@ -14,7 +14,7 @@ export default function Team() {
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<div className="mx-auto max-w-7xl p-5 text-center md:py-10 lg:px-8">
+			<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 lg:px-8">
 				<h2 className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">
 					รายชื่อทีมที่เข้าร่วมการแข่งขัน
 				</h2>

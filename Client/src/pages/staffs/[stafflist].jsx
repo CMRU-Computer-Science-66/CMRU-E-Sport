@@ -23,7 +23,7 @@ export default function StaffPage() {
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<div className="mx-auto max-w-3xl p-5 text-center sm:px-6 sm:py-32 lg:px-8">
+			<div className="mx-auto max-w-3xl p-5 text-center sm:px-6 lg:px-8">
 				{staff ? (
 					<div>
 						<h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">

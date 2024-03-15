@@ -1,15 +1,13 @@
-import { GithubIcon } from "@/components/icons";
 import { subtitle, title } from "@/components/primitives";
-import { siteConfig } from "@/config/site";
 import { GameListData } from "@/data/game";
-import { Code } from "@nextui-org/code";
 import { Link } from "@nextui-org/link";
 import { Card, CardBody } from "@nextui-org/react";
-import { Snippet } from "@nextui-org/snippet";
-import { button as buttonStyles } from "@nextui-org/theme";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+
+// Test 
+import ROV from "@/assets/game/rov.jpg"
 
 export default function Home() {
 	return (
@@ -23,7 +21,7 @@ export default function Home() {
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<section className="flex select-none flex-col items-center justify-center gap-4 py-8 md:py-10">
+			<section className="flex select-none flex-col items-center justify-center gap-4 py-8">
 				<div className="inline-block max-w-lg justify-center text-center">
 					<h1 className={title({ class: "inline" })}>ชมรม&nbsp;</h1>
 					<h1 className={title({ color: "yellow" })}>E Sport &nbsp;</h1>

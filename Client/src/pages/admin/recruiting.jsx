@@ -15,7 +15,7 @@ export default function Recruiting() {
 				<link href="/logo.ico" rel="icon" />
 			</Head>
 			<main className="flex-1 p-5">
-				<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 sm:py-32 lg:px-8">
+				<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 lg:px-8">
 					<h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
 						CMRU E-Sport Recruiting
 					</h1>

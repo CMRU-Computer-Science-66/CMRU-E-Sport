@@ -1,5 +1,5 @@
 import { DevData, Staff2Data, StaffData, lecturerData } from "@/data/staff";
-import { Card } from "@nextui-org/react";
+import { Card, CardBody } from "@nextui-org/react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +14,7 @@ export default function Staff() {
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link href="/logo.ico" rel="icon" />
 			</Head>
-			<div className="mx-auto max-w-7xl p-5 text-center md:py-10 lg:px-8">
+			<div className="mx-auto max-w-7xl p-5 text-center sm:px-6 lg:px-8">
 				<h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
 					เกี่ยวกับเรา
 				</h2>
@@ -75,32 +75,31 @@ export default function Staff() {
 						รายชื่อทีมงาน
 					</h2>
 
-					<h2 className="mt-5 text-center text-xl font-bold tracking-tight sm:text-4xl">
+					<h2 className="mt-5 text-left text-xl font-bold tracking-tight sm:text-4xl">
 						อาจารย์ที่ปรึกษาชมรม
 					</h2>
 
-					<div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="mt-8 mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
 						{lecturerData.map((item, index) => (
-							<Link
-								href={`/staffs/${encodeURIComponent(item.title)}`}
-								key={index}
-							>
-								<Card className="p-4 text-center hover:scale-105" key={index}>
-									<div className="flex flex-col items-center">
-										<Image
-											alt={item.title}
-											className="rounded-full"
-											height={100}
-											src={item.img}
-											width={100}
-										/>
+							<Card className="p-4 text-center" key={index}>
+								<div className="flex flex-col items-center">
+									<Image
+										alt={item.title}
+										className="rounded-full"
+										height={100}
+										src={item.img}
+										width={100}
+									/>
+								</div>
+								<CardBody className="gap-3">
+									<div className="text-center">
 										<h4 className="mt-4 text-lg font-semibold">{item.title}</h4>
 										<h4 className="text-sm text-gray-500">{item.staffrole}</h4>
 										<h4 className="text-sm text-gray-500">{item.faculty}</h4>
 										<h4 className="text-sm text-gray-500">{item.major}</h4>
 									</div>
-								</Card>
-							</Link>
+								</CardBody>
+							</Card>
 						))}
 					</div>
 
@@ -122,11 +121,15 @@ export default function Staff() {
 											src={item.img}
 											width={100}
 										/>
-										<h4 className="mt-4 text-lg font-semibold">{item.title}</h4>
-										<h4 className="text-sm text-gray-500">{item.staffrole}</h4>
-										<h4 className="text-sm text-gray-500">{item.faculty}</h4>
-										<h4 className="text-sm text-gray-500">{item.major}</h4>
 									</div>
+									<CardBody className="gap-3">
+										<div className="text-center">
+											<h4 className="mt-4 text-lg font-semibold">{item.title}</h4>
+											<h4 className="text-sm text-gray-500">{item.staffrole}</h4>
+											<h4 className="text-sm text-gray-500">{item.faculty}</h4>
+											<h4 className="text-sm text-gray-500">{item.major}</h4>
+										</div>
+									</CardBody>
 								</Card>
 							</Link>
 						))}
