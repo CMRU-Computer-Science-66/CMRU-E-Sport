@@ -1,3 +1,5 @@
+// Test
+import ROV from "@/assets/game/rov.jpg";
 import { subtitle, title } from "@/components/primitives";
 import { GameListData } from "@/data/game";
 import { Link } from "@nextui-org/link";
@@ -5,9 +7,6 @@ import { Card, CardBody } from "@nextui-org/react";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-
-// Test 
-import ROV from "@/assets/game/rov.jpg"
 
 export default function Home() {
 	return (

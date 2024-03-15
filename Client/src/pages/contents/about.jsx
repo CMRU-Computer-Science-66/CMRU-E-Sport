@@ -79,7 +79,7 @@ export default function Staff() {
 						อาจารย์ที่ปรึกษาชมรม
 					</h2>
 
-					<div className="mt-8 mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="mx-auto mt-8 grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
 						{lecturerData.map((item, index) => (
 							<Card className="p-4 text-center" key={index}>
 								<div className="flex flex-col items-center">
@@ -124,8 +124,12 @@ export default function Staff() {
 									</div>
 									<CardBody className="gap-3">
 										<div className="text-center">
-											<h4 className="mt-4 text-lg font-semibold">{item.title}</h4>
-											<h4 className="text-sm text-gray-500">{item.staffrole}</h4>
+											<h4 className="mt-4 text-lg font-semibold">
+												{item.title}
+											</h4>
+											<h4 className="text-sm text-gray-500">
+												{item.staffrole}
+											</h4>
 											<h4 className="text-sm text-gray-500">{item.faculty}</h4>
 											<h4 className="text-sm text-gray-500">{item.major}</h4>
 										</div>

@@ -1,7 +1,7 @@
 // Components
 // Data
 import { TeamData } from "@/data/team";
-import { Card, CardBody, } from "@nextui-org/react";
+import { Card, CardBody } from "@nextui-org/react";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
