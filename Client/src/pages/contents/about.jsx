@@ -146,7 +146,7 @@ export default function Staff() {
 					<div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 						{DevData.map((item, index) => (
 							<Link
-								href={`/staffs/${encodeURIComponent(item.title)}`}
+								href={`/developers/${encodeURIComponent(item.title)}`}
 								key={index}
 							>
 								<Card className="p-4 text-center hover:scale-105" key={index}>
