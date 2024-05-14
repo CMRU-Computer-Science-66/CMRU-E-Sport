@@ -145,21 +145,21 @@ export const Staff2Data = [
 
 export const DevData = [
 	{
-		faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
-		img: "https://i.pravatar.cc/150?u=a04258a2462d826712d",
 		facebook: "https://www.facebook.com/xz1smail",
-		instagram: "https://www.instagram.com/xz1smail/?hl=th",
+		faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
 		github: "https://github.com/zismaildev",
+		img: "https://i.pravatar.cc/150?u=a04258a2462d826712d",
+		instagram: "https://www.instagram.com/xz1smail/?hl=th",
 		major: "วิทยาการคอมพิวเตอร์",
 		staffrole: "Full Stack",
 		title: "ZismailDev",
 	},
 	{
-		faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
-		img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
 		facebook: "",
-		instagram: "",
+		faculty: "วิทยาศาสตร์ และ เทคโนโลยี",
 		github: "https://github.com/Faelayis",
+		img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+		instagram: "",
 		major: "วิทยาการคอมพิวเตอร์",
 		staffrole: "Full Stack",
 		title: "Faelayis",
