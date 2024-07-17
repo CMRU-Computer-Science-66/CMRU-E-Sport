@@ -12,7 +12,7 @@ export default function Tournaments() {
 				<link href="/logo.ico" rel="icon" />
 			</Head>
 			<div className="mx-auto max-w-7xl text-center sm:px-6 lg:px-8">
-				<h2 className="tracking-tig ht py-5  text-3xl font-bold sm:text-4xl">
+				<h2 className="tracking-tig ht py-5 text-3xl font-bold sm:text-4xl">
 					รายการแข่งขัน
 				</h2>
 				<Usage />
